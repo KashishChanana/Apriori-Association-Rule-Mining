@@ -106,15 +106,4 @@ def apriori_algorithm(transactions, min_sup, min_conf):
     rules = get_rules(total_L, support_dict, min_conf)
     print(rules)
     
-total_L = [[(1,2,3)]]
-support_dict={}
-support_dict[(1,2,3)]=100
-support_dict[(1,2)]=20
-support_dict[(1,3)]=30
-support_dict[(2,3)]=100
-
-
-
-s = get_rules(total_L,support_dict,0.5)
-print(s)
 
