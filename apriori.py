@@ -14,7 +14,7 @@ def get_L_1(transactions, min_sup):
     L_1 = []
     for transaction in transactions:
         for item in transaction:
-            L_1_support[item]+=1
+            L_1_support[tuple([item])]+=1
 
     total_transactions = len(transactions)
 
@@ -22,7 +22,7 @@ def get_L_1(transactions, min_sup):
         L_1_support[item] = L_1_support[item]/total_transactions*1.0
         
         if L_1_support[item] >= min_sup:
-            L_1.append(tuple([item]))
+            L_1.append(item)
     
     # print("*************************L1******************\n")
     
@@ -43,7 +43,7 @@ def apriori_gen(L_k):
     
 
 def prune(L_k, C_k_plus_one):
-    print("L_K",L_k)
+    #print("L_K",L_k)
     C_invalid = set()
     for c in C_k_plus_one:
         subsets = findsubsets(set(c), len(c)-1)
@@ -52,7 +52,7 @@ def prune(L_k, C_k_plus_one):
         for subset in subsets:
             if subset not in L_k:
                 #C_k_plus_one.remove(c)
-                print("remove",c, "for subset", subset)
+                #print("remove",c, "for subset", subset)
                 C_invalid.add(c)
                 break
     C_k_plus_one = C_k_plus_one - C_invalid
@@ -67,10 +67,10 @@ def get_L_k_plus_one(transactions, L_k, support_dict, min_sup):
     i=0
     while len(L_k)!=0:
         C_k_plus_one = apriori_gen(L_k)
-        print("C_K_plus_one",C_k_plus_one)
+        #print("C_K_plus_one",C_k_plus_one)
         C_k_plus_one = prune(L_k, C_k_plus_one)
 
-        print("C_K_plus_one", C_k_plus_one)
+        #print("C_K_plus_one", C_k_plus_one)
         if C_k_plus_one == set():
             break
         for transaction in transactions:
@@ -85,7 +85,7 @@ def get_L_k_plus_one(transactions, L_k, support_dict, min_sup):
         total_transactions = len(transactions)
         for item in L_k_plus_one_support.keys():
             L_k_plus_one_support[item] = L_k_plus_one_support[item]/total_transactions*1.0
-            print(item, L_k_plus_one_support[item])
+            #print(item, L_k_plus_one_support[item])
             if L_k_plus_one_support[item] >= min_sup:
                 L_k_plus_one.append(item)
         
@@ -100,24 +100,30 @@ def get_L_k_plus_one(transactions, L_k, support_dict, min_sup):
 def get_rules(total_L, support_dict, min_conf):
     final_associations = {}
     for L in total_L:
-        for rules in L:
-            rule_combinations = findsubsets(rules,len(rules)-1)
+        if len(L)>1:
+            rule_combinations = findsubsets(L,len(L)-1)
             for rule in rule_combinations:
                 LHS = rule
-                RHS = tuple(set(rules)-set(rule))[0]
-                conf = support_dict[rules]/support_dict[tuple(sorted(LHS))]
-                print(conf)
+                RHS = tuple(set(L)-set(rule))[0]
+                conf = support_dict[L]/support_dict[tuple(sorted(LHS))]
                 if(conf>=min_conf):
                     final_associations[(LHS,RHS)]=conf
+
     return final_associations
+
+    
 
      
 def apriori_algorithm(transactions, min_sup, min_conf):
 
     L_1, support_dict = get_L_1(transactions, min_sup)
+    #print("L1",L_1)
     total_L, support_dict = get_L_k_plus_one(transactions, L_1, support_dict, min_sup)
-    print(total_L)
+    #print(total_L)
     rules = get_rules(total_L, support_dict, min_conf)
-    print(rules)
-    
+    print("rules",rules)
+
+
+
+
 
