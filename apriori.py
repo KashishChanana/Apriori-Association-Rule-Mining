@@ -26,7 +26,7 @@ def get_L_1(transactions, min_sup):
     
     # print("*************************L1******************\n")
     
-    print(L_1, L_1_support)
+    #print(L_1, L_1_support)
     
     return L_1, L_1_support
 
@@ -65,7 +65,9 @@ def get_L_k_plus_one(transactions, L_k, support_dict, min_sup):
     L_k_plus_one_support = defaultdict(float)
     L_k_plus_one = []
     i=0
+    itr_count = 0
     while len(L_k)!=0:
+        L_k_plus_one = []
         C_k_plus_one = apriori_gen(L_k)
         #print("C_K_plus_one",C_k_plus_one)
         C_k_plus_one = prune(L_k, C_k_plus_one)
@@ -88,12 +90,14 @@ def get_L_k_plus_one(transactions, L_k, support_dict, min_sup):
             #print(item, L_k_plus_one_support[item])
             if L_k_plus_one_support[item] >= min_sup:
                 L_k_plus_one.append(item)
+        itr_count+=1
+        
         
         L_k = L_k_plus_one
         total_L += L_k
 
     support_dict= Counter(support_dict) + Counter(L_k_plus_one_support)
-    print(support_dict, total_L)
+    #print(support_dict, total_L)
     return total_L, support_dict
 
 
@@ -121,7 +125,9 @@ def apriori_algorithm(transactions, min_sup, min_conf):
     total_L, support_dict = get_L_k_plus_one(transactions, L_1, support_dict, min_sup)
     #print(total_L)
     rules = get_rules(total_L, support_dict, min_conf)
-    print("rules",rules)
+    print("rules that pass confidence threshold")
+    for key in rules:
+        print("[",key[0],"]=>","[",key[1],"]"," ",rules[key])
 
 
 
