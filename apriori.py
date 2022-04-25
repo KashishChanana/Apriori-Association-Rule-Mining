@@ -68,9 +68,10 @@ def get_L_k_plus_one(transactions, L_k, support_dict, min_sup):
     itr_count = 0
     while len(L_k)!=0:
         L_k_plus_one = []
+        L_k_plus_one_support = defaultdict(float)
         C_k_plus_one = apriori_gen(L_k)
         #print("C_K_plus_one",C_k_plus_one)
-        C_k_plus_one = prune(L_k, C_k_plus_one)
+        #C_k_plus_one = prune(L_k, C_k_plus_one)
 
         #print("C_K_plus_one", C_k_plus_one)
         if C_k_plus_one == set():
@@ -95,8 +96,9 @@ def get_L_k_plus_one(transactions, L_k, support_dict, min_sup):
         
         L_k = L_k_plus_one
         total_L += L_k
+        support_dict= Counter(support_dict) + Counter(L_k_plus_one_support)
 
-    support_dict= Counter(support_dict) + Counter(L_k_plus_one_support)
+    #support_dict= Counter(support_dict) + Counter(L_k_plus_one_support)
     #print(support_dict, total_L)
     return total_L, support_dict
 
@@ -109,9 +111,22 @@ def get_rules(total_L, support_dict, min_conf):
             for rule in rule_combinations:
                 LHS = rule
                 RHS = tuple(set(L)-set(rule))[0]
+                """
+                print("New Rule")
+                print("Total ",L, "LHS", LHS)
+                print("LHS",support_dict[tuple(sorted(LHS))] )
+                print("total",support_dict[L])
+                """
                 conf = support_dict[L]/support_dict[tuple(sorted(LHS))]
+
                 if(conf>=min_conf):
                     final_associations[(LHS,RHS)]=conf
+                    """
+                    print("New Rule")
+                    print("Total ",L, "LHS", LHS)
+                    print("LHS",support_dict[tuple(sorted(LHS))] )
+                    print("total",support_dict[L])
+                    """
 
     return final_associations
 
@@ -125,9 +140,15 @@ def apriori_algorithm(transactions, min_sup, min_conf):
     total_L, support_dict = get_L_k_plus_one(transactions, L_1, support_dict, min_sup)
     #print(total_L)
     rules = get_rules(total_L, support_dict, min_conf)
-    print("rules that pass confidence threshold")
+    """
+    for L in total_L:
+        print(L,support_dict[L])
+    """
+    print("*******************rules that pass confidence threshold***********")
     for key in rules:
         print("[",key[0],"]=>","[",key[1],"]"," ",rules[key])
+    
+    
 
 
 
