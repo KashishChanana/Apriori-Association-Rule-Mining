@@ -1,6 +1,7 @@
 from collections import defaultdict
 from collections import Counter
 import itertools
+import sys
 
 def findsubsets(s, n):
     return list(itertools.combinations(s, n))
@@ -105,30 +106,21 @@ def get_L_k_plus_one(transactions, L_k, support_dict, min_sup):
 
 def get_rules(total_L, support_dict, min_conf):
     final_associations = {}
+    final_associations_support = {}
     for L in total_L:
         if len(L)>1:
             rule_combinations = findsubsets(L,len(L)-1)
             for rule in rule_combinations:
                 LHS = rule
                 RHS = tuple(set(L)-set(rule))[0]
-                """
-                print("New Rule")
-                print("Total ",L, "LHS", LHS)
-                print("LHS",support_dict[tuple(sorted(LHS))] )
-                print("total",support_dict[L])
-                """
                 conf = support_dict[L]/support_dict[tuple(sorted(LHS))]
 
                 if(conf>=min_conf):
                     final_associations[(LHS,RHS)]=conf
-                    """
-                    print("New Rule")
-                    print("Total ",L, "LHS", LHS)
-                    print("LHS",support_dict[tuple(sorted(LHS))] )
-                    print("total",support_dict[L])
-                    """
+                    final_associations_support[(LHS,RHS)] = support_dict[L]
+                    # rule b->a final_association[(b,a)]=10, final_asso_supp[(a,b)]=90
 
-    return final_associations
+    return final_associations, final_associations_support
 
     
 
@@ -136,17 +128,34 @@ def get_rules(total_L, support_dict, min_conf):
 def apriori_algorithm(transactions, min_sup, min_conf):
 
     L_1, support_dict = get_L_1(transactions, min_sup)
-    #print("L1",L_1)
     total_L, support_dict = get_L_k_plus_one(transactions, L_1, support_dict, min_sup)
-    #print(total_L)
-    rules = get_rules(total_L, support_dict, min_conf)
-    """
+
+    total_itemsets = {}
     for L in total_L:
-        print(L,support_dict[L])
-    """
-    print("*******************rules that pass confidence threshold***********")
-    for key in rules:
-        print("[",key[0],"]=>","[",key[1],"]"," ",rules[key])
+        total_itemsets[L] = support_dict[L]
+    
+    total_itemsets = dict(sorted(total_itemsets.items(), key=lambda item: item[1], reverse=True))
+    
+    final_associations, final_associations_support = get_rules(total_L, support_dict, min_conf)
+    
+    rules = dict(sorted(final_associations.items(), key=lambda item: item[1], reverse=True))
+
+    original_stdout = sys.stdout
+
+    with open('output.txt', 'w') as f:
+        sys.stdout = f
+        print("\n\n\n*******************Frequent Itemsets along with Support in Decreasing Order***********\n\n")
+        for frequent_itemset in total_itemsets.keys():
+            print(list(frequent_itemset),",", round(total_itemsets[frequent_itemset]*100, 4), "%")
+
+    
+        print("\n\n\n*******************Association Rules with Confidence in Decreasing Order***********\n\n")
+        for rule in rules:
+            print(list(rule[0]),"=>","[", rule[1], "], (Conf: ", round(rules[rule]*100, 4), "%, Supp:", round(final_associations_support[rule]*100, 4), "%)")
+            
+
+    sys.stdout = original_stdout
+    f.close()
     
     
 
