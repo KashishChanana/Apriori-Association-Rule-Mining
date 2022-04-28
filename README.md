@@ -15,7 +15,7 @@ The following files have been submitted -
 Use the following command to run the code -
 `python3 main.py INTEGRATED_DATASET.csv <minimum support> <minimum confidence>`
 
-Example - `python3 main.py INTEGRATED_DATASET.csv 0.01 0.9`
+Example - `python3 main.py INTEGRATED_DATASET.csv 0.01 0.7`
 
 <b>4. NYC Open Data Set Chosen </b>
 
@@ -82,7 +82,7 @@ Example - `python3 main.py INTEGRATED_DATASET.csv 0.01 0.9`
     * Sorts rules in decreasing order of confidence.
     * Prints support and association rules in required format by writing the output to file.
 
- <b> 6. Results derived on `python3 main.py INTEGRATED_DATASET.csv 0.01 0.9`</b>
+ <b> 6. Results derived on `python3 main.py INTEGRATED_DATASET.csv 0.01 0.7`</b>
  
   * We were able to generate some interesting associations that gave us insight into the associations between different items in the market basket.
   * For example, some sample rules generated and their implications:
