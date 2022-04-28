@@ -82,8 +82,9 @@ Example - `python3 main.py INTEGRATED_DATASET.csv 0.01 0.7`
     * Sorts rules in decreasing order of confidence.
     * Prints support and association rules in required format by writing the output to file.
 
- <b> 6. Results derived on `python3 main.py INTEGRATED_DATASET.csv 0.01 0.7`</b>
- 
+ <b> 6. Results derived on `python3 main.py INTEGRATED_DATASET.csv 0.09 0.7`</b>
+  
+  * After empirically trying various combinations of support and confidence we decided to go with values 0.09 for support and 0.7 for confidence as they give a reasonable number of association rules that are relevant and interesting.
   * We were able to generate some interesting associations that gave us insight into the associations between different items in the market basket.
   * For example, some sample rules generated and their implications:
     * ['RACE/ETHNICITY=Native American'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=Low ], (Conf:  100.0 %, Supp: 12.8041 %) - This indicates an interesting association between race and total number of aids diagnoses which is true in a real scenario as AIDS is also influced by genetics which may be a case where people of some race are more prone to it than other.
