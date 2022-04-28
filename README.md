@@ -22,15 +22,28 @@ Example - `python3 main.py INTEGRATED_DATASET.csv 0.01 0.8`
   *  We chose the HIV/AIDS Diagnoses by Neighborhood, Sex, and Race/Ethnicity Dataset which initially had 2,928 rows and 10 columns.
   *  Link to the data set on website: https://data.cityofnewyork.us/Health/HIV-AIDS-Diagnoses-by-Neighborhood-Sex-and-Race-Et/ykvb-493p
   *  Data Cleaning Steps:
-      *  We have programattically cleaned the data and all the steps for data cleaning are mentioned in the Data Cleaning.ipynb notebook
-      *  There are certain rows for which most of the columns have null values. We decided to drop those rows to get better association rules.
-      *  There are certain rows for which most of the columns have unknown values. We decided to drop those rows to get better association rules.
-      *  There are certain rows for which most of the columns have * values. We decided to drop those rows to get better association rules.
-      *  We dropped column Year as it would not have any significance in the rules generated.
-      *  Some long column names have been renamed for ex: 
-      *  Column values were replaced as Column_Name=Column_Value to better understand what rules are generated.
+      *  We have programattically cleaned the data and all the steps for data cleaning are mentioned in the Data Cleaning HW3.ipynb notebook.
+      
+      *  There are certain rows for which most of the columns have null values. We decided to drop those rows to get better association rules. We used the  `data_cleaned  = data[~data.isna().any(axis=1)]` for this purpose.
+      
+      *  There are certain rows for which most of the columns have unknown values. We decided to drop those rows to get better association rules. We used ` data_cleaned = data_cleaned[~data_cleaned.isin(['*']).any(axis=1)]`
+      
+      *  There are certain rows for which most of the columns have * values. We decided to drop those rows to get better association rules. We used `data_cleaned = data_cleaned[~data_cleaned.isin(['Unknown']).any(axis=1)]`
+      
+      *  We dropped column 'Year' as it would not have any significance in the rules generated. The years ranged over a very short tenure, approx. 3 years. This was a very short tenure to be resulting in any vital information. We also removed the columns 'TOTAL NUMBER OF CONCURRENT HIV/AIDS DIAGNOSES	PROPORTION OF CONCURRENT',  'HIV/AIDS DIAGNOSES AMONG ALL HIV DIAGNOSES', these columns were removed  as they presented redundant information. We used the `data_cleaned = data_cleaned.drop(columns=['YEAR', 'TOTAL NUMBER OF CONCURRENT HIV/AIDS DIAGNOSES	PROPORTION OF CONCURRENT', 'HIV/AIDS DIAGNOSES AMONG ALL HIV DIAGNOSES'])`
+      
+      *  Long column names have been renamed for columns 'HIV DIAGNOSES PER 100,000 POPULATION' to  'HIV PER 100K' and ''AIDS DIAGNOSES PER 100,000 POPULATION': 'AIDS PER 100K'.  This was done using - `data_cleaned = data_cleaned.rename(columns={"HIV DIAGNOSES PER 100,000 POPULATION": "HIV PER 100K", "AIDS DIAGNOSES PER 100,000 POPULATION": "AIDS PER 100K"`
+      
+      *  For columns with numerical attributes- these columns include (	'TOTAL NUMBER OF HIV DIAGNOSES', 'HIV PER 100K', 'TOTAL NUMBER OF AIDS DIAGNOSES', 'AIDS PER 100K') - we used qcut function of pandas to bin these into Low, Medium, High categories and convert the numerical attributes to categorical attributes for better understanding and rule mining. Qcut provides for Quantile-based discretization function. This enables us to discretize variable into equal-sized buckets based on rank or based on sample quantiles. For example 1000 values for 10 quantiles would produce a Categorical object indicating quantile membership for each data point.
+      
+      *  Column values were replaced as Column_Name=Column_Value to better understand what rules are generated. For example: Column Sex with Values Male/ Female has now rows as Sex = Male or Sex = Female. This was done using 
+      
+      `for column in data_cleaned.columns: data_cleaned[column] = data_cleaned[column].apply(lambda x: column+"="+ str(x))`
+      
       *  The code for all this is present in the Data Cleaning HW3.ipynb notebook that we have submitted with this project.
-  *  After all the preprocessing we have 2507 rows and 7 columns.
+      
+  *  After all the data preprocessing & cleaning we have 2507 rows and 7 columns.
+  
   *  The data set that we have chosen is compelling because it allows us to generate association rules that give insight into how ethinicity, sex, neighbourhood give insight into weather AIDS, HIV or both are low, high or medium. It also gives insigth into the association rules between HIV and AIDS itself allowing one to understand the important associations which would help to take necessary steps and prevent an outbreak in the real world.
 
 <b> 5. Implementation of Apriori Algorithm </b>
