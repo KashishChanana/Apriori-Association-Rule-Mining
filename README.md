@@ -35,6 +35,11 @@ Example - `python3 main.py INTEGRATED_DATASET.csv 0.01 0.8`
       *  Long column names have been renamed for columns 'HIV DIAGNOSES PER 100,000 POPULATION' to  'HIV PER 100K' and ''AIDS DIAGNOSES PER 100,000 POPULATION': 'AIDS PER 100K'.  This was done using - `data_cleaned = data_cleaned.rename(columns={"HIV DIAGNOSES PER 100,000 POPULATION": "HIV PER 100K", "AIDS DIAGNOSES PER 100,000 POPULATION": "AIDS PER 100K"`
       
       *  For columns with numerical attributes- these columns include (	'TOTAL NUMBER OF HIV DIAGNOSES', 'HIV PER 100K', 'TOTAL NUMBER OF AIDS DIAGNOSES', 'AIDS PER 100K') - we used qcut function of pandas to bin these into Low, Medium, High categories and convert the numerical attributes to categorical attributes for better understanding and rule mining. Qcut provides for Quantile-based discretization function. This enables us to discretize variable into equal-sized buckets based on rank or based on sample quantiles. For example 1000 values for 10 quantiles would produce a Categorical object indicating quantile membership for each data point.
+      `to_bin_columns= ['TOTAL NUMBER OF HIV DIAGNOSES', 'HIV PER 100K', 'TOTAL NUMBER OF AIDS DIAGNOSES', 'AIDS PER 100K']`
+      
+       `for to_bin in to_bin_columns:`
+       
+       `data_cleaned['to_bin']=pd.qcut(np.array(data_cleaned['to_bin']).astype('float32'), 4,  duplicates='drop',labels=["Low", "Medium", "High"])`
       
       *  Column values were replaced as Column_Name=Column_Value to better understand what rules are generated. For example: Column Sex with Values Male/ Female has now rows as Sex = Male or Sex = Female. This was done using 
       
