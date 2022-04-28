@@ -82,15 +82,15 @@ Example - `python3 main.py INTEGRATED_DATASET.csv 0.01 0.9`
     * Sorts rules in decreasing order of confidence.
     * Prints support and association rules in required format by writing the output to file.
 
- <b> 6. Results </b>
+ <b> 6. Results derived on `python3 main.py INTEGRATED_DATASET.csv 0.01 0.9`</b>
  
   * We were able to generate some interesting associations that gave us insight into the associations between different items in the market basket.
   * For example, some sample rules generated and their implications:
     * ['RACE/ETHNICITY=Native American'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=Low ], (Conf:  100.0 %, Supp: 12.8041 %) - This indicates an interesting association between race and total number of aids diagnoses which is true in a real scenario as AIDS is also influced by genetics which may be a case where people of some race are more prone to it than other.
-    * ['RACE/ETHNICITY=Multiracial', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=Low ], (Conf:  100.0 %, Supp: 13.2429 %) - When race is Multiracial and TOTAL NUMBER OF HIV DIAGNOSES is low TOTAL NUMBER OF AIDS DIAGNOSES is also low which gives a surprising association of how multiracial race with low  total number of HIV virus has low total number of aids diagnosis.
+    * ['RACE/ETHNICITY=Multiracial', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=Low ], (Conf:  100.0 %, Supp: 13.2429 %) - When race is Multiracial and TOTAL NUMBER OF HIV DIAGNOSES is low TOTAL NUMBER OF AIDS DIAGNOSES is also low which gives a surprising association of how multiracial race with low  total number of HIV diagnosis has low total number of aids diagnosis.
     * ['AIDS PER 100K=High', 'SEX=Male', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] => [ TOTAL NUMBER OF HIV DIAGNOSES=High ], (Conf:  91.3858 %, Supp: 9.7327 %) - Another useful insight derived was that when AIDs per 100K is high, sex is male and total number of aids diagnosis is high then total number of HIV diagnosis is also high.
  * We have generated approximately 216 rules and discovered many such associations. These rules are useful in the sense that one can plan many preventive and curative measures according to the associations.
- 
+ * This also shows how infection rates differ with race and sex demographics.
  
  
  
