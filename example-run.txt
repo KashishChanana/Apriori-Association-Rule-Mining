@@ -1,0 +1,584 @@
+==Frequent itemsets (min_sup=1.0%)
+
+
+['TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 55.4846 %
+['TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 53.4105 %
+['TOTAL NUMBER OF AIDS DIAGNOSES=Low', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 50.4587 %
+['AIDS PER 100K=Low'] , 50.1396 %
+['HIV PER 100K=Low'] , 50.0997 %
+['AIDS PER 100K=Low', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 47.5469 %
+['SEX=Female'] , 46.6693 %
+['SEX=Male'] , 46.4699 %
+['AIDS PER 100K=Low', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 46.4699 %
+['HIV PER 100K=Low', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 45.5525 %
+['AIDS PER 100K=Low', 'HIV PER 100K=Low'] , 43.5181 %
+['HIV PER 100K=Low', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 43.4384 %
+['SEX=Female', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 33.4264 %
+['HIV PER 100K=Low', 'SEX=Female'] , 31.8309 %
+['SEX=Female', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 31.1528 %
+['AIDS PER 100K=Low', 'SEX=Female'] , 29.996 %
+['HIV PER 100K=High'] , 25.01 %
+['AIDS PER 100K=High'] , 25.01 %
+['HIV PER 100K=Medium'] , 24.8903 %
+['TOTAL NUMBER OF HIV DIAGNOSES=High'] , 24.8504 %
+['AIDS PER 100K=Medium'] , 24.8504 %
+['TOTAL NUMBER OF AIDS DIAGNOSES=High'] , 24.5712 %
+['TOTAL NUMBER OF AIDS DIAGNOSES=High', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 22.4571 %
+['SEX=Male', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 22.0981 %
+['TOTAL NUMBER OF AIDS DIAGNOSES=Medium'] , 22.0183 %
+['SEX=Male', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 21.8588 %
+['RACE/ETHNICITY=All'] , 20.2633 %
+['TOTAL NUMBER OF HIV DIAGNOSES=Medium'] , 19.6649 %
+['AIDS PER 100K=Low', 'SEX=Male'] , 19.5852 %
+['HIV PER 100K=High', 'SEX=Male'] , 19.3059 %
+['AIDS PER 100K=High', 'HIV PER 100K=High'] , 18.7076 %
+['HIV PER 100K=Low', 'SEX=Male'] , 17.2716 %
+['AIDS PER 100K=High', 'SEX=Male'] , 16.8728 %
+['AIDS PER 100K=Medium', 'HIV PER 100K=Medium'] , 16.3542 %
+['AIDS PER 100K=High', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] , 15.2373 %
+['TOTAL NUMBER OF AIDS DIAGNOSES=Medium', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] , 14.5991 %
+['AIDS PER 100K=High', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 14.3997 %
+['RACE/ETHNICITY=All', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] , 14.3598 %
+['RACE/ETHNICITY=All', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 14.3199 %
+['HIV PER 100K=High', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 13.7615 %
+['SEX=Male', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 13.6817 %
+['RACE/ETHNICITY=Black'] , 13.4025 %
+['RACE/ETHNICITY=White'] , 13.4025 %
+['RACE/ETHNICITY=Hispanic'] , 13.4025 %
+['HIV PER 100K=High', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] , 13.4025 %
+['RACE/ETHNICITY=Multiracial'] , 13.3626 %
+['RACE/ETHNICITY=Asian/Pacific Islander'] , 13.3626 %
+['RACE/ETHNICITY=Multiracial', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 13.3227 %
+['RACE/ETHNICITY=Multiracial', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 13.2429 %
+['AIDS PER 100K=Low', 'RACE/ETHNICITY=Multiracial'] , 12.844 %
+['RACE/ETHNICITY=Native American'] , 12.8041 %
+['RACE/ETHNICITY=Native American', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 12.8041 %
+['RACE/ETHNICITY=Native American', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 12.8041 %
+['SEX=Male', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] , 12.8041 %
+['AIDS PER 100K=Low', 'RACE/ETHNICITY=Native American'] , 12.7643 %
+['HIV PER 100K=Low', 'RACE/ETHNICITY=Native American'] , 12.7244 %
+['RACE/ETHNICITY=Asian/Pacific Islander', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 12.0064 %
+['AIDS PER 100K=Medium', 'TOTAL NUMBER OF AIDS DIAGNOSES=Medium'] , 11.8069 %
+['RACE/ETHNICITY=Asian/Pacific Islander', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 11.6873 %
+['SEX=Male', 'TOTAL NUMBER OF AIDS DIAGNOSES=Medium'] , 11.5676 %
+['HIV PER 100K=Low', 'RACE/ETHNICITY=Multiracial'] , 11.4081 %
+['HIV PER 100K=Medium', 'SEX=Female'] , 11.1288 %
+['SEX=Male', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] , 10.9294 %
+['AIDS PER 100K=Medium', 'SEX=Female'] , 10.8496 %
+['HIV PER 100K=High', 'SEX=Male', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 10.8097 %
+['HIV PER 100K=Medium', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 10.6502 %
+['HIV PER 100K=Medium', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] , 10.4507 %
+['AIDS PER 100K=Medium', 'RACE/ETHNICITY=All'] , 10.4108 %
+['AIDS PER 100K=Low', 'RACE/ETHNICITY=Asian/Pacific Islander'] , 10.4108 %
+['HIV PER 100K=High', 'SEX=Male', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] , 10.371 %
+['AIDS PER 100K=Medium', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 10.1715 %
+['AIDS PER 100K=Medium', 'SEX=Male'] , 10.012 %
+['HIV PER 100K=Medium', 'SEX=Male'] , 9.8923 %
+['SEX=Female', 'TOTAL NUMBER OF AIDS DIAGNOSES=Medium'] , 9.7726 %
+['HIV PER 100K=Medium', 'RACE/ETHNICITY=All'] , 9.7327 %
+['HIV PER 100K=Medium', 'TOTAL NUMBER OF AIDS DIAGNOSES=Medium'] , 9.5333 %
+['AIDS PER 100K=Medium', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] , 9.4934 %
+['AIDS PER 100K=High', 'RACE/ETHNICITY=Black'] , 9.3339 %
+['AIDS PER 100K=Medium', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] , 9.2541 %
+['HIV PER 100K=Low', 'RACE/ETHNICITY=Asian/Pacific Islander'] , 9.1743 %
+['HIV PER 100K=Medium', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] , 8.8552 %
+['HIV PER 100K=High', 'RACE/ETHNICITY=Black'] , 8.5361 %
+['SEX=Female', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] , 8.1372 %
+['RACE/ETHNICITY=White', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 8.0973 %
+['AIDS PER 100K=High', 'TOTAL NUMBER OF AIDS DIAGNOSES=Medium'] , 7.6984 %
+['HIV PER 100K=Low', 'RACE/ETHNICITY=White'] , 7.5788 %
+['RACE/ETHNICITY=White', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 7.499 %
+['SEX=All'] , 6.8608 %
+['RACE/ETHNICITY=All', 'SEX=All'] , 6.8608 %
+['HIV PER 100K=Medium', 'TOTAL NUMBER OF AIDS DIAGNOSES=Medium', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] , 6.8608 %
+['AIDS PER 100K=High', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] , 6.781 %
+['AIDS PER 100K=High', 'RACE/ETHNICITY=All'] , 6.7411 %
+['HIV PER 100K=High', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] , 6.7012 %
+['RACE/ETHNICITY=Black', 'SEX=Male'] , 6.7012 %
+['RACE/ETHNICITY=All', 'SEX=Male'] , 6.7012 %
+['RACE/ETHNICITY=Multiracial', 'SEX=Female'] , 6.7012 %
+['RACE/ETHNICITY=All', 'SEX=Female'] , 6.7012 %
+['RACE/ETHNICITY=Asian/Pacific Islander', 'SEX=Female'] , 6.7012 %
+['RACE/ETHNICITY=White', 'SEX=Female'] , 6.7012 %
+['RACE/ETHNICITY=White', 'SEX=Male'] , 6.7012 %
+['RACE/ETHNICITY=Hispanic', 'SEX=Female'] , 6.7012 %
+['RACE/ETHNICITY=Black', 'SEX=Female'] , 6.7012 %
+['RACE/ETHNICITY=Hispanic', 'SEX=Male'] , 6.7012 %
+['RACE/ETHNICITY=Multiracial', 'SEX=Male'] , 6.6613 %
+['RACE/ETHNICITY=Asian/Pacific Islander', 'SEX=Male'] , 6.6613 %
+['HIV PER 100K=High', 'TOTAL NUMBER OF AIDS DIAGNOSES=Medium'] , 6.5417 %
+['AIDS PER 100K=Low', 'RACE/ETHNICITY=White'] , 6.5417 %
+['RACE/ETHNICITY=Native American', 'SEX=Female'] , 6.4619 %
+['RACE/ETHNICITY=Native American', 'SEX=Male'] , 6.3422 %
+['RACE/ETHNICITY=Hispanic', 'TOTAL NUMBER OF AIDS DIAGNOSES=Medium'] , 6.3024 %
+['AIDS PER 100K=Medium', 'RACE/ETHNICITY=Hispanic'] , 6.1827 %
+['SEX=All', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 6.063 %
+['SEX=All', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] , 6.0231 %
+['HIV PER 100K=Low', 'TOTAL NUMBER OF AIDS DIAGNOSES=Medium'] , 5.9434 %
+['HIV PER 100K=High', 'RACE/ETHNICITY=Black', 'SEX=Male'] , 5.9434 %
+['AIDS PER 100K=High', 'SEX=Female'] , 5.8237 %
+['HIV PER 100K=Medium', 'RACE/ETHNICITY=Hispanic'] , 5.7838 %
+['SEX=Female', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] , 5.7439 %
+['RACE/ETHNICITY=Hispanic', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] , 5.7439 %
+['HIV PER 100K=High', 'RACE/ETHNICITY=All'] , 5.704 %
+['AIDS PER 100K=Medium', 'HIV PER 100K=Low'] , 5.6641 %
+['RACE/ETHNICITY=Black', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] , 5.5445 %
+['AIDS PER 100K=High', 'HIV PER 100K=Medium'] , 5.3849 %
+['HIV PER 100K=Medium', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 5.3849 %
+['AIDS PER 100K=Medium', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 5.1855 %
+['SEX=Female', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 5.1057 %
+['HIV PER 100K=High', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 5.0658 %
+['RACE/ETHNICITY=Black', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 5.0259 %
+['TOTAL NUMBER OF AIDS DIAGNOSES=Medium', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 5.0259 %
+['HIV PER 100K=Medium', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 4.9063 %
+['AIDS PER 100K=High', 'RACE/ETHNICITY=Hispanic'] , 4.9063 %
+['RACE/ETHNICITY=Black', 'TOTAL NUMBER OF AIDS DIAGNOSES=Medium'] , 4.8664 %
+['RACE/ETHNICITY=White', 'TOTAL NUMBER OF AIDS DIAGNOSES=Medium'] , 4.8664 %
+['HIV PER 100K=Low', 'RACE/ETHNICITY=All'] , 4.8265 %
+['HIV PER 100K=High', 'RACE/ETHNICITY=Hispanic'] , 4.7467 %
+['AIDS PER 100K=Medium', 'RACE/ETHNICITY=White'] , 4.7068 %
+['RACE/ETHNICITY=All', 'TOTAL NUMBER OF AIDS DIAGNOSES=Medium'] , 4.627 %
+['RACE/ETHNICITY=Black', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] , 4.5473 %
+['HIV PER 100K=High', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 4.5473 %
+['HIV PER 100K=Medium', 'SEX=Male', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] , 4.5074 %
+['HIV PER 100K=High', 'RACE/ETHNICITY=Black', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] , 4.3079 %
+['RACE/ETHNICITY=All', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] , 4.268 %
+['RACE/ETHNICITY=Hispanic', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 4.1484 %
+['HIV PER 100K=Low', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] , 4.1085 %
+['HIV PER 100K=Medium', 'RACE/ETHNICITY=Hispanic', 'SEX=Female'] , 4.0686 %
+['AIDS PER 100K=Medium', 'SEX=All'] , 3.9888 %
+['HIV PER 100K=High', 'RACE/ETHNICITY=Black', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 3.9489 %
+['HIV PER 100K=Medium', 'SEX=All'] , 3.8692 %
+['RACE/ETHNICITY=Black', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 3.8293 %
+['AIDS PER 100K=High', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 3.8293 %
+['AIDS PER 100K=Medium', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 3.7894 %
+['HIV PER 100K=High', 'SEX=Female'] , 3.7096 %
+['HIV PER 100K=Medium', 'SEX=All', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 3.7096 %
+['HIV PER 100K=Medium', 'SEX=All', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] , 3.7096 %
+['HIV PER 100K=Medium', 'RACE/ETHNICITY=Hispanic', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] , 3.6298 %
+['RACE/ETHNICITY=Hispanic', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] , 3.5899 %
+['RACE/ETHNICITY=Hispanic', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 3.5102 %
+['RACE/ETHNICITY=Hispanic', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 3.5102 %
+['AIDS PER 100K=Low', 'HIV PER 100K=High'] , 3.4703 %
+['RACE/ETHNICITY=White', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] , 3.4304 %
+['RACE/ETHNICITY=Black', 'SEX=Male', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] , 3.4304 %
+['AIDS PER 100K=Low', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] , 3.3905 %
+['HIV PER 100K=Medium', 'RACE/ETHNICITY=Black'] , 3.3506 %
+['HIV PER 100K=High', 'RACE/ETHNICITY=Black', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] , 3.3506 %
+['HIV PER 100K=High', 'RACE/ETHNICITY=Black', 'SEX=Male', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] , 3.3107 %
+['RACE/ETHNICITY=Black', 'SEX=Male', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 3.1911 %
+['AIDS PER 100K=Low', 'HIV PER 100K=Medium'] , 3.1512 %
+['AIDS PER 100K=Low', 'RACE/ETHNICITY=All'] , 3.1113 %
+['RACE/ETHNICITY=White', 'SEX=Male', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] , 3.0315 %
+['HIV PER 100K=High', 'RACE/ETHNICITY=Black', 'SEX=Male', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 3.0315 %
+['RACE/ETHNICITY=Black', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 2.9916 %
+['HIV PER 100K=High', 'RACE/ETHNICITY=Black', 'TOTAL NUMBER OF AIDS DIAGNOSES=Medium'] , 2.9916 %
+['TOTAL NUMBER OF AIDS DIAGNOSES=Low', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] , 2.9517 %
+['HIV PER 100K=Medium', 'RACE/ETHNICITY=White'] , 2.9517 %
+['HIV PER 100K=Medium', 'RACE/ETHNICITY=Asian/Pacific Islander'] , 2.9118 %
+['HIV PER 100K=High', 'RACE/ETHNICITY=Hispanic', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 2.9118 %
+['HIV PER 100K=Low', 'RACE/ETHNICITY=Hispanic'] , 2.872 %
+['HIV PER 100K=High', 'RACE/ETHNICITY=White'] , 2.872 %
+['HIV PER 100K=Medium', 'SEX=Male', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 2.872 %
+['AIDS PER 100K=Medium', 'HIV PER 100K=High'] , 2.8321 %
+['RACE/ETHNICITY=White', 'TOTAL NUMBER OF AIDS DIAGNOSES=Medium', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] , 2.7922 %
+['HIV PER 100K=High', 'RACE/ETHNICITY=Hispanic', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] , 2.7523 %
+['HIV PER 100K=Medium', 'SEX=Male', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 2.6326 %
+['HIV PER 100K=High', 'RACE/ETHNICITY=Black', 'SEX=Female'] , 2.5927 %
+['HIV PER 100K=Medium', 'RACE/ETHNICITY=White', 'SEX=Male'] , 2.5529 %
+['AIDS PER 100K=Low', 'TOTAL NUMBER OF AIDS DIAGNOSES=Medium'] , 2.513 %
+['HIV PER 100K=Low', 'RACE/ETHNICITY=Hispanic', 'SEX=Female'] , 2.513 %
+['HIV PER 100K=Medium', 'RACE/ETHNICITY=Asian/Pacific Islander', 'SEX=Male'] , 2.4731 %
+['HIV PER 100K=Medium', 'SEX=Male', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] , 2.4332 %
+['Neighborhood (U.H.F)=Greenpoint'] , 2.3933 %
+['Neighborhood (U.H.F)=Southeast Queens'] , 2.3933 %
+['Neighborhood (U.H.F)=Coney Island - Sheepshead Bay'] , 2.3933 %
+['Neighborhood (U.H.F)=Southwest Queens'] , 2.3933 %
+['Neighborhood (U.H.F)=Willowbrook'] , 2.3933 %
+['Neighborhood (U.H.F)=Gramercy Park - Murray Hill'] , 2.3933 %
+['Neighborhood (U.H.F)=Crotona - Tremont'] , 2.3933 %
+['Neighborhood (U.H.F)=Jamaica'] , 2.3933 %
+['Neighborhood (U.H.F)=Fordham - Bronx Park'] , 2.3933 %
+['Neighborhood (U.H.F)=South Beach - Tottenville'] , 2.3933 %
+['Neighborhood (U.H.F)=Union Square - Lower Eastside'] , 2.3933 %
+['Neighborhood (U.H.F)=Borough Park'] , 2.3933 %
+['Neighborhood (U.H.F)=Port Richmond'] , 2.3933 %
+['Neighborhood (U.H.F)=East New York'] , 2.3933 %
+['Neighborhood (U.H.F)=Pelham - Throgs Neck'] , 2.3933 %
+['Neighborhood (U.H.F)=Upper Westside'] , 2.3933 %
+['Neighborhood (U.H.F)=Sunset Park'] , 2.3933 %
+['Neighborhood (U.H.F)=Central Harlem - Morningside Heights'] , 2.3933 %
+['Neighborhood (U.H.F)=West Queens'] , 2.3933 %
+['Neighborhood (U.H.F)=Fresh Meadows'] , 2.3933 %
+['Neighborhood (U.H.F)=Bayside - Little Neck'] , 2.3933 %
+['Neighborhood (U.H.F)=High Bridge - Morrisania'] , 2.3933 %
+['Neighborhood (U.H.F)=Bensonhurst - Bay Ridge'] , 2.3933 %
+['Neighborhood (U.H.F)=Washington Heights - Inwood'] , 2.3933 %
+['Neighborhood (U.H.F)=Upper Eastside'] , 2.3933 %
+['Neighborhood (U.H.F)=Kingsbridge - Riverdale'] , 2.3933 %
+['Neighborhood (U.H.F)=Greenwich Village - SoHo'] , 2.3933 %
+['Neighborhood (U.H.F)=East Harlem'] , 2.3933 %
+['Neighborhood (U.H.F)=Lower Manhattan'] , 2.3933 %
+['Neighborhood (U.H.F)=Rockaway'] , 2.3933 %
+['TOTAL NUMBER OF AIDS DIAGNOSES=Medium', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 2.3933 %
+['HIV PER 100K=High', 'RACE/ETHNICITY=White', 'SEX=Male'] , 2.3933 %
+['Neighborhood (U.H.F)=Stapleton - St. George'] , 2.3534 %
+['Neighborhood (U.H.F)=East Flatbush - Flatbush'] , 2.3534 %
+['Neighborhood (U.H.F)=Flushing - Clearview'] , 2.3534 %
+['Neighborhood (U.H.F)=Downtown - Heights - Park Slope'] , 2.3534 %
+['Neighborhood (U.H.F)=Bedford Stuyvesant - Crown Heights'] , 2.3534 %
+['Neighborhood (U.H.F)=Chelsea - Clinton'] , 2.3534 %
+['Neighborhood (U.H.F)=Canarsie - Flatlands'] , 2.3534 %
+['Neighborhood (U.H.F)=Ridgewood - Forest Hills'] , 2.3534 %
+['Neighborhood (U.H.F)=Long Island City - Astoria'] , 2.3534 %
+['Neighborhood (U.H.F)=Williamsburg - Bushwick'] , 2.3135 %
+['Neighborhood (U.H.F)=Bayside - Little Neck', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 2.3135 %
+['AIDS PER 100K=High', 'SEX=All'] , 2.3135 %
+['AIDS PER 100K=Low', 'RACE/ETHNICITY=Hispanic'] , 2.3135 %
+['Neighborhood (U.H.F)=Hunts Point - Mott Haven'] , 2.2736 %
+['Neighborhood (U.H.F)=Northeast Bronx'] , 2.2736 %
+['Neighborhood (U.H.F)=Willowbrook', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 2.2736 %
+['Neighborhood (U.H.F)=Bayside - Little Neck', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 2.2337 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=Willowbrook'] , 2.1939 %
+['AIDS PER 100K=Low', 'RACE/ETHNICITY=Black'] , 2.154 %
+['AIDS PER 100K=High', 'RACE/ETHNICITY=White'] , 2.154 %
+['HIV PER 100K=Medium', 'RACE/ETHNICITY=Asian/Pacific Islander', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 2.154 %
+['TOTAL NUMBER OF AIDS DIAGNOSES=High', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] , 2.1141 %
+['AIDS PER 100K=Low', 'Neighborhood (U.H.F)=South Beach - Tottenville'] , 2.0742 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=Bayside - Little Neck'] , 2.0742 %
+['AIDS PER 100K=Low', 'Neighborhood (U.H.F)=Bayside - Little Neck'] , 2.0742 %
+['AIDS PER 100K=High', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 2.0742 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=South Beach - Tottenville'] , 2.0343 %
+['Neighborhood (U.H.F)=Willowbrook', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.9944 %
+['HIV PER 100K=High', 'SEX=All'] , 1.9944 %
+['Neighborhood (U.H.F)=Willowbrook', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.9944 %
+['HIV PER 100K=High', 'SEX=All', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 1.9944 %
+['HIV PER 100K=High', 'SEX=All', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] , 1.9944 %
+['AIDS PER 100K=Medium', 'RACE/ETHNICITY=Black'] , 1.9146 %
+['Neighborhood (U.H.F)=Fresh Meadows', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.9146 %
+['Neighborhood (U.H.F)=Fresh Meadows', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.9146 %
+['Neighborhood (U.H.F)=South Beach - Tottenville', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.9146 %
+['AIDS PER 100K=Low', 'Neighborhood (U.H.F)=Willowbrook'] , 1.8748 %
+['RACE/ETHNICITY=White', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 1.8748 %
+['RACE/ETHNICITY=White', 'SEX=Male', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 1.8748 %
+['HIV PER 100K=High', 'RACE/ETHNICITY=Multiracial'] , 1.795 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=Fresh Meadows'] , 1.7551 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=Flushing - Clearview'] , 1.7152 %
+['Neighborhood (U.H.F)=South Beach - Tottenville', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.7152 %
+['HIV PER 100K=Medium', 'RACE/ETHNICITY=White', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] , 1.7152 %
+['RACE/ETHNICITY=All', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.6753 %
+['AIDS PER 100K=Low', 'Neighborhood (U.H.F)=Fresh Meadows'] , 1.6753 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=Bensonhurst - Bay Ridge'] , 1.6753 %
+['AIDS PER 100K=Low', 'Neighborhood (U.H.F)=Bensonhurst - Bay Ridge'] , 1.6753 %
+['Neighborhood (U.H.F)=Lower Manhattan', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.6753 %
+['HIV PER 100K=Medium', 'RACE/ETHNICITY=White', 'SEX=Male', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] , 1.6753 %
+['AIDS PER 100K=Medium', 'RACE/ETHNICITY=Asian/Pacific Islander'] , 1.6354 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=Borough Park'] , 1.6354 %
+['AIDS PER 100K=Low', 'Neighborhood (U.H.F)=Flushing - Clearview'] , 1.6354 %
+['AIDS PER 100K=Low', 'Neighborhood (U.H.F)=Borough Park'] , 1.5955 %
+['RACE/ETHNICITY=Asian/Pacific Islander', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] , 1.5556 %
+['Neighborhood (U.H.F)=Flushing - Clearview', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.5556 %
+['Neighborhood (U.H.F)=Bensonhurst - Bay Ridge', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.5556 %
+['Neighborhood (U.H.F)=Bensonhurst - Bay Ridge', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.5556 %
+['Neighborhood (U.H.F)=Lower Manhattan', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.5556 %
+['RACE/ETHNICITY=White', 'SEX=Male', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.5556 %
+['Neighborhood (U.H.F)=Sunset Park', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.5158 %
+['Neighborhood (U.H.F)=Port Richmond', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.5158 %
+['HIV PER 100K=Low', 'RACE/ETHNICITY=Black'] , 1.5158 %
+['Neighborhood (U.H.F)=Kingsbridge - Riverdale', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.5158 %
+['AIDS PER 100K=Low', 'Neighborhood (U.H.F)=Lower Manhattan'] , 1.5158 %
+['Neighborhood (U.H.F)=Greenwich Village - SoHo', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.5158 %
+['Neighborhood (U.H.F)=Greenpoint', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.4759 %
+['Neighborhood (U.H.F)=Port Richmond', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.4759 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=Southeast Queens'] , 1.4759 %
+['Neighborhood (U.H.F)=Kingsbridge - Riverdale', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.4759 %
+['Neighborhood (U.H.F)=Greenwich Village - SoHo', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.4759 %
+['Neighborhood (U.H.F)=Flushing - Clearview', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.436 %
+['Neighborhood (U.H.F)=Southeast Queens', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.436 %
+['AIDS PER 100K=Low', 'Neighborhood (U.H.F)=Greenwich Village - SoHo'] , 1.436 %
+['Neighborhood (U.H.F)=Southeast Queens', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.3961 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=Ridgewood - Forest Hills'] , 1.3961 %
+['Neighborhood (U.H.F)=Ridgewood - Forest Hills', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.3961 %
+['Neighborhood (U.H.F)=Gramercy Park - Murray Hill', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.3562 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=Kingsbridge - Riverdale'] , 1.3562 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=Lower Manhattan'] , 1.3562 %
+['Neighborhood (U.H.F)=Rockaway', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.3562 %
+['Neighborhood (U.H.F)=Canarsie - Flatlands', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.3562 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=Coney Island - Sheepshead Bay'] , 1.3163 %
+['RACE/ETHNICITY=Asian/Pacific Islander', 'TOTAL NUMBER OF AIDS DIAGNOSES=Medium'] , 1.3163 %
+['AIDS PER 100K=Low', 'Neighborhood (U.H.F)=Port Richmond'] , 1.3163 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=Port Richmond'] , 1.3163 %
+['Neighborhood (U.H.F)=Rockaway', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.3163 %
+['AIDS PER 100K=High', 'Neighborhood (U.H.F)=Bedford Stuyvesant - Crown Heights'] , 1.3163 %
+['AIDS PER 100K=High', 'RACE/ETHNICITY=Asian/Pacific Islander'] , 1.3163 %
+['Neighborhood (U.H.F)=Ridgewood - Forest Hills', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.3163 %
+['Neighborhood (U.H.F)=Upper Eastside', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.3163 %
+['HIV PER 100K=High', 'RACE/ETHNICITY=White', 'TOTAL NUMBER OF AIDS DIAGNOSES=Medium'] , 1.3163 %
+['Neighborhood (U.H.F)=Greenpoint', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.2764 %
+['AIDS PER 100K=Low', 'Neighborhood (U.H.F)=Coney Island - Sheepshead Bay'] , 1.2764 %
+['Neighborhood (U.H.F)=Crotona - Tremont', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.2764 %
+['Neighborhood (U.H.F)=Crotona - Tremont', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.2764 %
+['RACE/ETHNICITY=All', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.2764 %
+['AIDS PER 100K=Low', 'Neighborhood (U.H.F)=Gramercy Park - Murray Hill'] , 1.2764 %
+['Neighborhood (U.H.F)=Borough Park', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.2764 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=Sunset Park'] , 1.2764 %
+['Neighborhood (U.H.F)=Sunset Park', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.2764 %
+['AIDS PER 100K=High', 'Neighborhood (U.H.F)=High Bridge - Morrisania'] , 1.2764 %
+['Neighborhood (U.H.F)=Upper Westside', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.2764 %
+['AIDS PER 100K=Low', 'Neighborhood (U.H.F)=Ridgewood - Forest Hills'] , 1.2764 %
+['HIV PER 100K=High', 'RACE/ETHNICITY=Asian/Pacific Islander'] , 1.2764 %
+['Neighborhood (U.H.F)=Upper Eastside', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.2764 %
+['HIV PER 100K=High', 'RACE/ETHNICITY=White', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 1.2764 %
+['HIV PER 100K=High', 'RACE/ETHNICITY=White', 'SEX=Male', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 1.2764 %
+['Neighborhood (U.H.F)=Stapleton - St. George', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.2365 %
+['Neighborhood (U.H.F)=Stapleton - St. George', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.2365 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=Greenpoint'] , 1.2365 %
+['Neighborhood (U.H.F)=Borough Park', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.2365 %
+['HIV PER 100K=High', 'Neighborhood (U.H.F)=High Bridge - Morrisania'] , 1.2365 %
+['AIDS PER 100K=Low', 'Neighborhood (U.H.F)=Southeast Queens'] , 1.2365 %
+['Neighborhood (U.H.F)=East New York', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.2365 %
+['Neighborhood (U.H.F)=Canarsie - Flatlands', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.2365 %
+['Neighborhood (U.H.F)=Greenpoint', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.2365 %
+['HIV PER 100K=High', 'RACE/ETHNICITY=Black', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.2365 %
+['HIV PER 100K=High', 'RACE/ETHNICITY=Black', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.2365 %
+['Neighborhood (U.H.F)=Coney Island - Sheepshead Bay', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.1966 %
+['Neighborhood (U.H.F)=Fordham - Bronx Park', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.1966 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=West Queens'] , 1.1966 %
+['Neighborhood (U.H.F)=Gramercy Park - Murray Hill', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.1966 %
+['HIV PER 100K=High', 'Neighborhood (U.H.F)=Crotona - Tremont'] , 1.1966 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=Upper Westside'] , 1.1966 %
+['HIV PER 100K=High', 'TOTAL NUMBER OF AIDS DIAGNOSES=Medium', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 1.1966 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=Southwest Queens'] , 1.1568 %
+['Neighborhood (U.H.F)=Jamaica', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.1568 %
+['Neighborhood (U.H.F)=Fordham - Bronx Park', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.1568 %
+['AIDS PER 100K=Medium', 'Neighborhood (U.H.F)=Southwest Queens'] , 1.1568 %
+['AIDS PER 100K=Low', 'Neighborhood (U.H.F)=Sunset Park'] , 1.1568 %
+['AIDS PER 100K=High', 'Neighborhood (U.H.F)=Central Harlem - Morningside Heights'] , 1.1568 %
+['Neighborhood (U.H.F)=Upper Westside', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.1568 %
+['HIV PER 100K=High', 'Neighborhood (U.H.F)=Washington Heights - Inwood'] , 1.1568 %
+['Neighborhood (U.H.F)=East New York', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.1568 %
+['AIDS PER 100K=High', 'Neighborhood (U.H.F)=East Harlem'] , 1.1568 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=Rockaway'] , 1.1568 %
+['HIV PER 100K=High', 'Neighborhood (U.H.F)=Chelsea - Clinton'] , 1.1568 %
+['AIDS PER 100K=Low', 'Neighborhood (U.H.F)=Upper Eastside'] , 1.1568 %
+['HIV PER 100K=Medium', 'Neighborhood (U.H.F)=Stapleton - St. George'] , 1.1568 %
+['Neighborhood (U.H.F)=East New York', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.1568 %
+['Neighborhood (U.H.F)=Greenpoint', 'SEX=Male'] , 1.1169 %
+['Neighborhood (U.H.F)=Stapleton - St. George', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Southeast Queens', 'SEX=Male'] , 1.1169 %
+['Neighborhood (U.H.F)=East Flatbush - Flatbush', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.1169 %
+['Neighborhood (U.H.F)=East Flatbush - Flatbush', 'SEX=Female'] , 1.1169 %
+['AIDS PER 100K=Low', 'Neighborhood (U.H.F)=Greenpoint'] , 1.1169 %
+['Neighborhood (U.H.F)=Greenpoint', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Coney Island - Sheepshead Bay', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.1169 %
+['Neighborhood (U.H.F)=Coney Island - Sheepshead Bay', 'SEX=Male'] , 1.1169 %
+['Neighborhood (U.H.F)=Southwest Queens', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.1169 %
+['Neighborhood (U.H.F)=Southwest Queens', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Willowbrook', 'SEX=Male'] , 1.1169 %
+['Neighborhood (U.H.F)=Gramercy Park - Murray Hill', 'SEX=Male'] , 1.1169 %
+['Neighborhood (U.H.F)=Crotona - Tremont', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Jamaica', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Gramercy Park - Murray Hill', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Fordham - Bronx Park', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Union Square - Lower Eastside', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Borough Park', 'SEX=Male'] , 1.1169 %
+['Neighborhood (U.H.F)=Port Richmond', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Southwest Queens', 'SEX=Male'] , 1.1169 %
+['Neighborhood (U.H.F)=East New York', 'SEX=Male'] , 1.1169 %
+['Neighborhood (U.H.F)=Pelham - Throgs Neck', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Willowbrook', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Upper Westside', 'SEX=Male'] , 1.1169 %
+['Neighborhood (U.H.F)=Sunset Park', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Central Harlem - Morningside Heights', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=West Queens', 'SEX=Male'] , 1.1169 %
+['Neighborhood (U.H.F)=Bedford Stuyvesant - Crown Heights', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Port Richmond', 'SEX=Male'] , 1.1169 %
+['Neighborhood (U.H.F)=East New York', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Fresh Meadows', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Bayside - Little Neck', 'SEX=Male'] , 1.1169 %
+['Neighborhood (U.H.F)=Crotona - Tremont', 'SEX=Male'] , 1.1169 %
+['AIDS PER 100K=High', 'Neighborhood (U.H.F)=Crotona - Tremont'] , 1.1169 %
+['Neighborhood (U.H.F)=High Bridge - Morrisania', 'SEX=Male'] , 1.1169 %
+['Neighborhood (U.H.F)=High Bridge - Morrisania', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] , 1.1169 %
+['Neighborhood (U.H.F)=Flushing - Clearview', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Sunset Park', 'SEX=Male'] , 1.1169 %
+['Neighborhood (U.H.F)=Bensonhurst - Bay Ridge', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Coney Island - Sheepshead Bay', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Borough Park', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Upper Westside', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Upper Eastside', 'SEX=Male'] , 1.1169 %
+['AIDS PER 100K=High', 'Neighborhood (U.H.F)=Hunts Point - Mott Haven'] , 1.1169 %
+['Neighborhood (U.H.F)=Kingsbridge - Riverdale', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Washington Heights - Inwood', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Washington Heights - Inwood', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.1169 %
+['Neighborhood (U.H.F)=Greenwich Village - SoHo', 'SEX=Male'] , 1.1169 %
+['Neighborhood (U.H.F)=West Queens', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=East Harlem', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Lower Manhattan', 'SEX=Male'] , 1.1169 %
+['Neighborhood (U.H.F)=Ridgewood - Forest Hills', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Bensonhurst - Bay Ridge', 'SEX=Male'] , 1.1169 %
+['Neighborhood (U.H.F)=Southeast Queens', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Central Harlem - Morningside Heights', 'SEX=Male'] , 1.1169 %
+['Neighborhood (U.H.F)=Union Square - Lower Eastside', 'SEX=Male'] , 1.1169 %
+['Neighborhood (U.H.F)=East Harlem', 'SEX=Male'] , 1.1169 %
+['Neighborhood (U.H.F)=Rockaway', 'SEX=Female'] , 1.1169 %
+['AIDS PER 100K=Low', 'Neighborhood (U.H.F)=Rockaway'] , 1.1169 %
+['Neighborhood (U.H.F)=Williamsburg - Bushwick', 'SEX=Male'] , 1.1169 %
+['Neighborhood (U.H.F)=Lower Manhattan', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Pelham - Throgs Neck', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.1169 %
+['Neighborhood (U.H.F)=Pelham - Throgs Neck', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.1169 %
+['Neighborhood (U.H.F)=Pelham - Throgs Neck', 'SEX=Male'] , 1.1169 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=Long Island City - Astoria'] , 1.1169 %
+['Neighborhood (U.H.F)=Long Island City - Astoria', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=High Bridge - Morrisania', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.1169 %
+['Neighborhood (U.H.F)=Greenwich Village - SoHo', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Fresh Meadows', 'SEX=Male'] , 1.1169 %
+['Neighborhood (U.H.F)=Washington Heights - Inwood', 'SEX=Male'] , 1.1169 %
+['Neighborhood (U.H.F)=Kingsbridge - Riverdale', 'SEX=Male'] , 1.1169 %
+['Neighborhood (U.H.F)=Jamaica', 'SEX=Male'] , 1.1169 %
+['HIV PER 100K=Medium', 'Neighborhood (U.H.F)=Jamaica'] , 1.1169 %
+['Neighborhood (U.H.F)=Fordham - Bronx Park', 'SEX=Male'] , 1.1169 %
+['Neighborhood (U.H.F)=High Bridge - Morrisania', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=South Beach - Tottenville', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Rockaway', 'SEX=Male'] , 1.1169 %
+['Neighborhood (U.H.F)=East Harlem', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.1169 %
+['Neighborhood (U.H.F)=South Beach - Tottenville', 'SEX=Male'] , 1.1169 %
+['Neighborhood (U.H.F)=Downtown - Heights - Park Slope', 'SEX=Female'] , 1.1169 %
+['AIDS PER 100K=High', 'Neighborhood (U.H.F)=Chelsea - Clinton'] , 1.1169 %
+['Neighborhood (U.H.F)=Chelsea - Clinton', 'SEX=Male'] , 1.1169 %
+['Neighborhood (U.H.F)=Canarsie - Flatlands', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Long Island City - Astoria', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.1169 %
+['Neighborhood (U.H.F)=Bayside - Little Neck', 'SEX=Female'] , 1.1169 %
+['Neighborhood (U.H.F)=Upper Eastside', 'SEX=Female'] , 1.1169 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=Upper Eastside'] , 1.1169 %
+['Neighborhood (U.H.F)=Stapleton - St. George', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.1169 %
+['HIV PER 100K=Medium', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] , 1.1169 %
+['AIDS PER 100K=Low', 'Neighborhood (U.H.F)=Stapleton - St. George'] , 1.077 %
+['AIDS PER 100K=Medium', 'Neighborhood (U.H.F)=Southeast Queens'] , 1.077 %
+['Neighborhood (U.H.F)=East Flatbush - Flatbush', 'SEX=Male'] , 1.077 %
+['Neighborhood (U.H.F)=East Flatbush - Flatbush', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.077 %
+['Neighborhood (U.H.F)=Southwest Queens', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.077 %
+['AIDS PER 100K=Low', 'Neighborhood (U.H.F)=Southwest Queens'] , 1.077 %
+['Neighborhood (U.H.F)=Flushing - Clearview', 'SEX=Male'] , 1.077 %
+['AIDS PER 100K=Low', 'Neighborhood (U.H.F)=Crotona - Tremont'] , 1.077 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=Gramercy Park - Murray Hill'] , 1.077 %
+['Neighborhood (U.H.F)=Downtown - Heights - Park Slope', 'SEX=Male'] , 1.077 %
+['Neighborhood (U.H.F)=Downtown - Heights - Park Slope', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.077 %
+['Neighborhood (U.H.F)=Central Harlem - Morningside Heights', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 1.077 %
+['Neighborhood (U.H.F)=Stapleton - St. George', 'SEX=Male'] , 1.077 %
+['Neighborhood (U.H.F)=Crotona - Tremont', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 1.077 %
+['Neighborhood (U.H.F)=Crotona - Tremont', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] , 1.077 %
+['Neighborhood (U.H.F)=High Bridge - Morrisania', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 1.077 %
+['Neighborhood (U.H.F)=Chelsea - Clinton', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.077 %
+['Neighborhood (U.H.F)=Chelsea - Clinton', 'SEX=Female'] , 1.077 %
+['Neighborhood (U.H.F)=Hunts Point - Mott Haven', 'SEX=Female'] , 1.077 %
+['AIDS PER 100K=Medium', 'Neighborhood (U.H.F)=Kingsbridge - Riverdale'] , 1.077 %
+['Neighborhood (U.H.F)=Northeast Bronx', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.077 %
+['Neighborhood (U.H.F)=Northeast Bronx', 'SEX=Male'] , 1.077 %
+['Neighborhood (U.H.F)=Washington Heights - Inwood', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.077 %
+['Neighborhood (U.H.F)=Canarsie - Flatlands', 'SEX=Male'] , 1.077 %
+['Neighborhood (U.H.F)=Hunts Point - Mott Haven', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.077 %
+['HIV PER 100K=High', 'Neighborhood (U.H.F)=East Harlem'] , 1.077 %
+['Neighborhood (U.H.F)=Williamsburg - Bushwick', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 1.077 %
+['Neighborhood (U.H.F)=Bedford Stuyvesant - Crown Heights', 'SEX=Male'] , 1.077 %
+['Neighborhood (U.H.F)=Long Island City - Astoria', 'SEX=Male'] , 1.077 %
+['AIDS PER 100K=Low', 'Neighborhood (U.H.F)=Pelham - Throgs Neck'] , 1.077 %
+['AIDS PER 100K=Low', 'Neighborhood (U.H.F)=Long Island City - Astoria'] , 1.077 %
+['Neighborhood (U.H.F)=High Bridge - Morrisania', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.077 %
+['AIDS PER 100K=Low', 'Neighborhood (U.H.F)=Kingsbridge - Riverdale'] , 1.077 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=Greenwich Village - SoHo'] , 1.077 %
+['Neighborhood (U.H.F)=East Harlem', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.077 %
+['AIDS PER 100K=Low', 'Neighborhood (U.H.F)=Canarsie - Flatlands'] , 1.077 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=Canarsie - Flatlands'] , 1.077 %
+['Neighborhood (U.H.F)=Long Island City - Astoria', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.077 %
+['Neighborhood (U.H.F)=Ridgewood - Forest Hills', 'SEX=Male'] , 1.077 %
+['Neighborhood (U.H.F)=Fordham - Bronx Park', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] , 1.077 %
+['Neighborhood (U.H.F)=Willowbrook', 'SEX=Male', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] , 1.077 %
+['HIV PER 100K=High', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] , 1.077 %
+['HIV PER 100K=Medium', 'TOTAL NUMBER OF AIDS DIAGNOSES=Medium', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] , 1.077 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=Stapleton - St. George'] , 1.0371 %
+['Neighborhood (U.H.F)=Union Square - Lower Eastside', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.0371 %
+['Neighborhood (U.H.F)=Downtown - Heights - Park Slope', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] , 1.0371 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=Downtown - Heights - Park Slope'] , 1.0371 %
+['Neighborhood (U.H.F)=Pelham - Throgs Neck', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] , 1.0371 %
+['AIDS PER 100K=Low', 'Neighborhood (U.H.F)=West Queens'] , 1.0371 %
+['HIV PER 100K=High', 'Neighborhood (U.H.F)=Central Harlem - Morningside Heights'] , 1.0371 %
+['Neighborhood (U.H.F)=Williamsburg - Bushwick', 'SEX=Female'] , 1.0371 %
+['HIV PER 100K=High', 'Neighborhood (U.H.F)=Williamsburg - Bushwick'] , 1.0371 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=Pelham - Throgs Neck'] , 1.0371 %
+['HIV PER 100K=High', 'Neighborhood (U.H.F)=Hunts Point - Mott Haven'] , 1.0371 %
+['Neighborhood (U.H.F)=Hunts Point - Mott Haven', 'SEX=Male'] , 1.0371 %
+['Neighborhood (U.H.F)=Northeast Bronx', 'SEX=Female'] , 1.0371 %
+['AIDS PER 100K=Low', 'Neighborhood (U.H.F)=Upper Westside'] , 1.0371 %
+['RACE/ETHNICITY=White', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] , 1.0371 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=Chelsea - Clinton'] , 1.0371 %
+['HIV PER 100K=Low', 'Neighborhood (U.H.F)=South Beach - Tottenville', 'SEX=Female'] , 1.0371 %
+['RACE/ETHNICITY=White', 'SEX=Male', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] , 1.0371 %
+
+
+==High-confidence association rules (min_conf=80.0%)
+['RACE/ETHNICITY=Native American'] => [ TOTAL NUMBER OF HIV DIAGNOSES=Low ] (Conf:  100.0 %, Supp: 12.8041 %)
+['RACE/ETHNICITY=Native American'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=Low ] (Conf:  100.0 %, Supp: 12.8041 %)
+['SEX=All'] => [ RACE/ETHNICITY=All ] (Conf:  100.0 %, Supp: 6.8608 %)
+['Neighborhood (U.H.F)=Willowbrook', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] => [ TOTAL NUMBER OF HIV DIAGNOSES=Low ] (Conf:  100.0 %, Supp: 1.9944 %)
+['HIV PER 100K=High', 'SEX=All'] => [ TOTAL NUMBER OF HIV DIAGNOSES=High ] (Conf:  100.0 %, Supp: 1.9944 %)
+['HIV PER 100K=High', 'SEX=All'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=High ] (Conf:  100.0 %, Supp: 1.9944 %)
+['RACE/ETHNICITY=White', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] => [ SEX=Male ] (Conf:  100.0 %, Supp: 1.8748 %)
+['Neighborhood (U.H.F)=East New York', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] => [ TOTAL NUMBER OF HIV DIAGNOSES=Low ] (Conf:  100.0 %, Supp: 1.1568 %)
+['RACE/ETHNICITY=White', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] => [ SEX=Male ] (Conf:  100.0 %, Supp: 1.0371 %)
+['HIV PER 100K=High', 'RACE/ETHNICITY=White', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] => [ SEX=Male ] (Conf:  100.0 %, Supp: 1.2764 %)
+['RACE/ETHNICITY=Multiracial'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=Low ] (Conf:  99.7015 %, Supp: 13.3227 %)
+['RACE/ETHNICITY=Native American'] => [ AIDS PER 100K=Low ] (Conf:  99.6885 %, Supp: 12.7643 %)
+['RACE/ETHNICITY=Native American'] => [ HIV PER 100K=Low ] (Conf:  99.3769 %, Supp: 12.7244 %)
+['RACE/ETHNICITY=Multiracial'] => [ TOTAL NUMBER OF HIV DIAGNOSES=Low ] (Conf:  99.1045 %, Supp: 13.2429 %)
+['HIV PER 100K=Medium', 'RACE/ETHNICITY=White', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] => [ SEX=Male ] (Conf:  97.6744 %, Supp: 1.6753 %)
+['Neighborhood (U.H.F)=Greenpoint', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] => [ TOTAL NUMBER OF HIV DIAGNOSES=Low ] (Conf:  96.875 %, Supp: 1.2365 %)
+['Neighborhood (U.H.F)=Bayside - Little Neck'] => [ TOTAL NUMBER OF HIV DIAGNOSES=Low ] (Conf:  96.6667 %, Supp: 2.3135 %)
+['RACE/ETHNICITY=Black', 'SEX=Male', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] => [ HIV PER 100K=High ] (Conf:  96.5116 %, Supp: 3.3107 %)
+['Neighborhood (U.H.F)=Willowbrook', 'SEX=Male'] => [ TOTAL NUMBER OF HIV DIAGNOSES=Low ] (Conf:  96.4286 %, Supp: 1.077 %)
+['RACE/ETHNICITY=Multiracial'] => [ AIDS PER 100K=Low ] (Conf:  96.1194 %, Supp: 12.844 %)
+['HIV PER 100K=Medium', 'SEX=All'] => [ TOTAL NUMBER OF HIV DIAGNOSES=High ] (Conf:  95.8763 %, Supp: 3.7096 %)
+['HIV PER 100K=Medium', 'SEX=All'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=High ] (Conf:  95.8763 %, Supp: 3.7096 %)
+['Neighborhood (U.H.F)=Willowbrook'] => [ TOTAL NUMBER OF HIV DIAGNOSES=Low ] (Conf:  95.0 %, Supp: 2.2736 %)
+['RACE/ETHNICITY=Black', 'SEX=Male', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] => [ HIV PER 100K=High ] (Conf:  95.0 %, Supp: 3.0315 %)
+['AIDS PER 100K=Low'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=Low ] (Conf:  94.829 %, Supp: 47.5469 %)
+['TOTAL NUMBER OF AIDS DIAGNOSES=Low'] => [ TOTAL NUMBER OF HIV DIAGNOSES=Low ] (Conf:  94.4735 %, Supp: 50.4587 %)
+['Neighborhood (U.H.F)=East New York', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=Low ] (Conf:  93.5484 %, Supp: 1.1568 %)
+['Neighborhood (U.H.F)=Bayside - Little Neck'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=Low ] (Conf:  93.3333 %, Supp: 2.2337 %)
+['Neighborhood (U.H.F)=South Beach - Tottenville', 'SEX=Female'] => [ HIV PER 100K=Low ] (Conf:  92.8571 %, Supp: 1.0371 %)
+['AIDS PER 100K=Low'] => [ TOTAL NUMBER OF HIV DIAGNOSES=Low ] (Conf:  92.681 %, Supp: 46.4699 %)
+['Neighborhood (U.H.F)=Willowbrook'] => [ HIV PER 100K=Low ] (Conf:  91.6667 %, Supp: 2.1939 %)
+['TOTAL NUMBER OF AIDS DIAGNOSES=High'] => [ TOTAL NUMBER OF HIV DIAGNOSES=High ] (Conf:  91.3961 %, Supp: 22.4571 %)
+['TOTAL NUMBER OF HIV DIAGNOSES=Low'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=Low ] (Conf:  90.9418 %, Supp: 50.4587 %)
+['HIV PER 100K=Low'] => [ TOTAL NUMBER OF HIV DIAGNOSES=Low ] (Conf:  90.9236 %, Supp: 45.5525 %)
+['TOTAL NUMBER OF HIV DIAGNOSES=High'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=High ] (Conf:  90.3692 %, Supp: 22.4571 %)
+['Neighborhood (U.H.F)=Stapleton - St. George', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] => [ TOTAL NUMBER OF HIV DIAGNOSES=Low ] (Conf:  90.3226 %, Supp: 1.1169 %)
+['Neighborhood (U.H.F)=Stapleton - St. George', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=Low ] (Conf:  90.3226 %, Supp: 1.1169 %)
+['RACE/ETHNICITY=Asian/Pacific Islander'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=Low ] (Conf:  89.8507 %, Supp: 12.0064 %)
+['TOTAL NUMBER OF AIDS DIAGNOSES=Low'] => [ AIDS PER 100K=Low ] (Conf:  89.0217 %, Supp: 47.5469 %)
+['RACE/ETHNICITY=Black', 'SEX=Male'] => [ HIV PER 100K=High ] (Conf:  88.6905 %, Supp: 5.9434 %)
+['SEX=All'] => [ TOTAL NUMBER OF HIV DIAGNOSES=High ] (Conf:  88.3721 %, Supp: 6.063 %)
+['RACE/ETHNICITY=White', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] => [ SEX=Male ] (Conf:  88.3721 %, Supp: 3.0315 %)
+['SEX=All'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=High ] (Conf:  87.7907 %, Supp: 6.0231 %)
+['Neighborhood (U.H.F)=Willowbrook', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=Low ] (Conf:  87.7193 %, Supp: 1.9944 %)
+['HIV PER 100K=Low', 'RACE/ETHNICITY=Hispanic'] => [ SEX=Female ] (Conf:  87.5 %, Supp: 2.513 %)
+['RACE/ETHNICITY=Asian/Pacific Islander'] => [ TOTAL NUMBER OF HIV DIAGNOSES=Low ] (Conf:  87.4627 %, Supp: 11.6873 %)
+['HIV PER 100K=Low'] => [ AIDS PER 100K=Low ] (Conf:  86.8631 %, Supp: 43.5181 %)
+['AIDS PER 100K=Low'] => [ HIV PER 100K=Low ] (Conf:  86.794 %, Supp: 43.5181 %)
+['HIV PER 100K=Low'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=Low ] (Conf:  86.7038 %, Supp: 43.4384 %)
+['Neighborhood (U.H.F)=South Beach - Tottenville'] => [ AIDS PER 100K=Low ] (Conf:  86.6667 %, Supp: 2.0742 %)
+['Neighborhood (U.H.F)=Bayside - Little Neck'] => [ HIV PER 100K=Low ] (Conf:  86.6667 %, Supp: 2.0742 %)
+['Neighborhood (U.H.F)=Bayside - Little Neck'] => [ AIDS PER 100K=Low ] (Conf:  86.6667 %, Supp: 2.0742 %)
+['HIV PER 100K=Medium', 'RACE/ETHNICITY=White'] => [ SEX=Male ] (Conf:  86.4865 %, Supp: 2.5529 %)
+['RACE/ETHNICITY=Multiracial'] => [ HIV PER 100K=Low ] (Conf:  85.3731 %, Supp: 11.4081 %)
+['Neighborhood (U.H.F)=South Beach - Tottenville'] => [ HIV PER 100K=Low ] (Conf:  85.0 %, Supp: 2.0343 %)
+['HIV PER 100K=Medium', 'RACE/ETHNICITY=Asian/Pacific Islander'] => [ SEX=Male ] (Conf:  84.9315 %, Supp: 2.4731 %)
+['Neighborhood (U.H.F)=Greenpoint', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=Low ] (Conf:  83.7838 %, Supp: 1.2365 %)
+['TOTAL NUMBER OF HIV DIAGNOSES=Low'] => [ AIDS PER 100K=Low ] (Conf:  83.7527 %, Supp: 46.4699 %)
+['Neighborhood (U.H.F)=Willowbrook'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=Low ] (Conf:  83.3333 %, Supp: 1.9944 %)
+['HIV PER 100K=High', 'RACE/ETHNICITY=White'] => [ SEX=Male ] (Conf:  83.3333 %, Supp: 2.3933 %)
+['RACE/ETHNICITY=Hispanic', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] => [ HIV PER 100K=High ] (Conf:  82.9545 %, Supp: 2.9118 %)
+['TOTAL NUMBER OF HIV DIAGNOSES=Low'] => [ HIV PER 100K=Low ] (Conf:  82.0992 %, Supp: 45.5525 %)
+['RACE/ETHNICITY=White', 'TOTAL NUMBER OF HIV DIAGNOSES=Medium'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=Medium ] (Conf:  81.3953 %, Supp: 2.7922 %)
+['TOTAL NUMBER OF AIDS DIAGNOSES=Low'] => [ HIV PER 100K=Low ] (Conf:  81.3294 %, Supp: 43.4384 %)
+['SEX=Male', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] => [ HIV PER 100K=High ] (Conf:  80.9969 %, Supp: 10.371 %)
