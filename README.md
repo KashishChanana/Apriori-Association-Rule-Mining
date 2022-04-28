@@ -5,10 +5,10 @@
 
 The following files have been submitted -
 1. Data Cleaning HW3.ipynb - This file contains the steps we undertook to clean the data.
-2. INTEGRATED_DATASET.csv - Contains the cleaned data obtained after undertaking the data cleaning steps.
+2. INTEGRATED-DATASET.csv - Contains the cleaned data obtained after undertaking the data cleaning steps.
 3. apriori.py - python file that implements the Apriori Association Rule Mining Algorithm
 4. main.py - python file responsible for running the program
-5. output.txt - example run output obtained as a result of running the apriori algorithm
+5. example-run.txt - example run output obtained as a result of running the apriori algorithm with confidence 0.7 and support 0.01
 
 <b>3. Steps to run the code </b>
 
