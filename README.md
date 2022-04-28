@@ -4,10 +4,15 @@
 <b>2. List of files submitted </b>
 
 The following files have been submitted -
+
 1. Data Cleaning HW3.ipynb - This file contains the steps we undertook to clean the data.
+
 2. INTEGRATED-DATASET.csv - Contains the cleaned data obtained after undertaking the data cleaning steps.
+
 3. apriori.py - python file that implements the Apriori Association Rule Mining Algorithm
+
 4. main.py - python file responsible for running the program
+
 5. example-run.txt - example run output obtained as a result of running the apriori algorithm with confidence 0.7 and support 0.01
 
 <b>3. Steps to run the code </b>
@@ -54,9 +59,13 @@ Example - `python3 main.py INTEGRATED_DATASET.csv 0.01 0.7`
 <b> 5. Implementation of Apriori Algorithm </b>
 
  a. In main.py
+ 
   * Function Read to CSV file and store transactions in transactions list.
+ 
   * Parse DataFile name, minimum support and minimum confidence from command line
+  
   * Call function read and store transactions in a list.
+  
   * Call apriori_algorithm from apriori.py
 
  b. In apriori.py
@@ -65,7 +74,7 @@ Example - `python3 main.py INTEGRATED_DATASET.csv 0.01 0.7`
   * findpermutations(): Finds permutations of length n
   * get_L_1(): Generates the first L1 set of individual items. Returns L1 and L1_support. Only items that pass the minimum support threshold are appended to the list.
   * apriori_gen(): Takes in the previous list generated of size k i.e. Lk and generates subsets for L_k+1. The SQL part mentioned in the paper has been implemented in this function from scratch without using python libraries. Where we use set-intersect for join and items are ordered hence item1=item2...and item4<item5 part of the paper also holds.
-  * prune(): After C_k+1 subsets are generated, the prune function removes the invalid ones. If subset of the set of C_K+1 is not in Lk remove the same (Same logic as per the paper).
+  * prune(): After C_k+1 subsets are generated, the prune function removes the invalid ones. If subset of the set of C_K+1 is not in Lk remove the same (Same logic as per the paper)
   * get_L_k_plus_one(): Repeat till len(L_K)!=0. 
       * The initial input to this function is L1 generated via get_L_1(). If L_1 is empty break the loop and return empty set for C_k_plus_one.
       * Else for all transactions for all candidate sets in C_k_plus_one if candidate set is subset of transaction increase count of candidate by 1.
@@ -88,10 +97,11 @@ Example - `python3 main.py INTEGRATED_DATASET.csv 0.01 0.7`
  
   * We were able to generate some interesting associations that gave us insight into the associations between different items in the market basket.
   * For example, some rules generated and their implications:
+
  1. ['RACE/ETHNICITY=Native American'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=Low ], (Conf:  100.0 %, Supp: 12.8041 %) - This indicates an interesting association between race and total number of aids diagnoses.  Such a rule helps studying the demographics of AIDS based on Race. People of Native American race have low total number of HIV diagnosis.
-2. ['RACE/ETHNICITY=Multiracial'] => [ AIDS PER 100K=Low ] (Conf:  96.1194 %, Supp: 12.844 %) - This rule also sheds light on race and AIDS diagnosis. As we can see people of multiracial race tend to have lower AIDS diagnosis per 100K population. 
- 
-3. ['RACE/ETHNICITY=Black', 'SEX=Male'] => [ HIV PER 100K=High ] (Conf:  88.6905 %, Supp: 5.9434 %) - In continuation of the previous rule, if we have a population of Black Males, it's likely that HIV cases PER 100K population is High. This again sheds light on how the disease is spread across different communities based on Race and Gender. Such a rule can be helpful in analyzing patterns and taking preventative measures in the communities that are high risk.
+ 2. ['RACE/ETHNICITY=Multiracial'] => [ AIDS PER 100K=Low ] (Conf:  96.1194 %, Supp: 12.844 %) - This rule also sheds light on race and AIDS diagnosis. As we can see people of multiracial race tend to have lower AIDS diagnosis per 100K population. 
+
+ 3. ['RACE/ETHNICITY=Black', 'SEX=Male'] => [ HIV PER 100K=High ] (Conf:  88.6905 %, Supp: 5.9434 %) - In continuation of the previous rule, if we have a population of Black Males, it's likely that HIV cases PER 100K population is High. This again sheds light on how the disease is spread across different communities based on Race and Gender. Such a rule can be helpful in analyzing patterns and taking preventative measures in the communities that are high risk.
  
  4. ['Neighborhood (U.H.F)=South Beach - Tottenville', 'SEX=Female'] => [ HIV PER 100K=Low ] (Conf:  92.8571 %, Supp: 1.0371 %) - This rule is also interesting as it talks about the Neighborhood, the geographic location of where people are loacted. As per this rule, for female folks located in the South Beach - Tottenville location, it is likely that the HIV diagnosis per 100K population is low, marking this region safer in terms of HIV diagosis for females.
  
@@ -102,11 +112,3 @@ There were several other interesting associations that were obtained as a result
  
  
   
-
-
-
-  
-      
- 
-   
-   
