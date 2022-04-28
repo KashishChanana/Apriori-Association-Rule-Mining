@@ -15,7 +15,7 @@ The following files have been submitted -
 Use the following command to run the code -
 `python3 main.py INTEGRATED_DATASET.csv <minimum support> <minimum confidence>`
 
-Example - `python3 main.py INTEGRATED_DATASET.csv 0.01 0.7`
+Example - `python3 main.py INTEGRATED_DATASET.csv 0.09 0.7`
 
 <b>4. NYC Open Data Set Chosen </b>
 
