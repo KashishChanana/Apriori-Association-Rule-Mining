@@ -87,7 +87,7 @@ Example - `python3 main.py INTEGRATED_DATASET.csv 0.01 0.7`
   * After empirically trying various combinations of support and confidence we decided to go with values 0.01 for support and 0.7 for confidence as they give a reasonable number of association rules that are relevant and interesting. 0.01 support makes sense as discussed in class - high levels of support doesn't garner enough frequent itemsets that might give good quality association rules, therefore realistically speaking using low support allows us to capture more information. Confidence value of 0.7 was also empirically selected by studying the nature & varity of the rules generated.
  
   * We were able to generate some interesting associations that gave us insight into the associations between different items in the market basket.
-  * For example, some sample rules generated and their implications:
+  * For example, some rules generated and their implications:
  1. ['RACE/ETHNICITY=Native American'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=Low ], (Conf:  100.0 %, Supp: 12.8041 %) - This indicates an interesting association between race and total number of aids diagnoses.  Such a rule helps studying the demographics of AIDS based on Race. People of Native American race have low total number of HIV diagnosis.
 2. ['RACE/ETHNICITY=Multiracial'] => [ AIDS PER 100K=Low ] (Conf:  96.1194 %, Supp: 12.844 %) - This rule also sheds light on race and AIDS diagnosis. As we can see people of multiracial race tend to have lower AIDS diagnosis per 100K population. 
  
