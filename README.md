@@ -3,7 +3,19 @@
 
 <b>2. List of files submitted </b>
 
+The following files have been submitted -
+1. Data Cleaning HW3.ipynb - This file contains the steps we undertook to clean the data.
+2. INTEGRATED_DATASET.csv - Contains the cleaned data obtained after undertaking the data cleaning steps.
+3. apriori.py - python file that implements the Apriori Association Rule Mining Algorithm
+4. main.py - python file responsible for running the program
+5. output.txt - example run output obtained as a result of running the apriori algorithm
+
 <b>3. Steps to run the code </b>
+
+Use the following command to run the code -
+`python3 main.py INTEGRATED_DATASET.csv <minimum support> <minimum confidence>`
+
+Example - `python3 main.py INTEGRATED_DATASET.csv 0.01 0.8`
 
 <b>4. NYC Open Data Set Chosen </b>
 
@@ -15,9 +27,9 @@
       *  There are certain rows for which most of the columns have unknown values. We decided to drop those rows to get better association rules.
       *  There are certain rows for which most of the columns have * values. We decided to drop those rows to get better association rules.
       *  We dropped column Year as it would not have any significance in the rules generated.
-      *  Some long column names have been renamed.
-      *  Column values were replaced as Column_Name=Column_Value to better understand what rules are genrated.
-      *  The code for all this is present in the Data Cleaning.ipynb notebook that we have submitted with this project.
+      *  Some long column names have been renamed for ex: 
+      *  Column values were replaced as Column_Name=Column_Value to better understand what rules are generated.
+      *  The code for all this is present in the Data Cleaning HW3.ipynb notebook that we have submitted with this project.
   *  After all the preprocessing we have 2507 rows and 7 columns.
   *  The data set that we have chosen is compelling because it allows us to generate association rules that give insight into how ethinicity, sex, neighbourhood give insight into weather AIDS, HIV or both are low, high or medium. It also gives insigth into the association rules between HIV and AIDS itself allowing one to understand the important associations which would help to take necessary steps and prevent an outbreak in the real world.
 
