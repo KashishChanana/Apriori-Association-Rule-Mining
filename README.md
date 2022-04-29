@@ -22,7 +22,7 @@ Use the following command to run the code -
 
 `python3 main.py INTEGRATED-DATASET.csv <minimum support> <minimum confidence>`
 
-Example - `python3 main.py INTEGRATED-DATASET.csv 0.01 0.7`
+Example - `python3 main.py INTEGRATED-DATASET.csv 0.1 0.7`
 
 <b>4. NYC Open Data Set Chosen </b>
 
@@ -93,7 +93,7 @@ Example - `python3 main.py INTEGRATED-DATASET.csv 0.01 0.7`
     * Sorts rules in decreasing order of confidence.
     * Prints support and association rules in required format by writing the output to file.
 
- <b> 6. Results derived on `python3 main.py INTEGRATED-DATASET.csv 0.01 0.7`</b>
+ <b> 6. Results derived on `python3 main.py INTEGRATED-DATASET.csv 0.1 0.7`</b>
   
   * After empirically trying various combinations of support and confidence we decided to go with values 0.01 for support and 0.7 for confidence as they give a reasonable number of association rules that are relevant and interesting. 0.01 support makes sense as discussed in class - high levels of support doesn't garner enough frequent itemsets that might give good quality association rules, therefore realistically speaking using low support allows us to capture more information. Confidence value of 0.7 was also empirically selected by studying the nature & varity of the rules generated.
  
@@ -103,14 +103,22 @@ Example - `python3 main.py INTEGRATED-DATASET.csv 0.01 0.7`
  1. ['RACE/ETHNICITY=Native American'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=Low ], (Conf:  100.0 %, Supp: 12.8041 %) - This indicates an interesting association between race and total number of aids diagnoses.  Such a rule helps studying the demographics of AIDS based on Race. People of Native American race have low total number of HIV diagnosis.
  2. ['RACE/ETHNICITY=Multiracial'] => [ AIDS PER 100K=Low ] (Conf:  96.1194 %, Supp: 12.844 %) - This rule also sheds light on race and AIDS diagnosis. As we can see people of multiracial race tend to have lower AIDS diagnosis per 100K population. 
 
- 3. ['RACE/ETHNICITY=Black', 'SEX=Male'] => [ HIV PER 100K=High ] (Conf:  88.6905 %, Supp: 5.9434 %) - In continuation of the previous rule, if we have a population of Black Males, it's likely that HIV cases PER 100K population is High. This again sheds light on how the disease is spread across different communities based on Race and Gender. Such a rule can be helpful in analyzing patterns and taking preventative measures in the communities that are high risk.
+ 3. ['SEX=Female', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] => [ AIDS PER 100K=Low ] (Conf:  84.2482 %, Supp: 28.1611 %)
+ - In continuation of the previous rule, we observe that in Females when total number of HIV number of HIV Diagnosis is low, AIDS per 100k population is also low.
  
- 4. ['Neighborhood (U.H.F)=South Beach - Tottenville', 'SEX=Female'] => [ TOTAL NUMBER OF HIV DIAGNOSES=Low ] (Conf:  100.0 %, Supp: 1.1169 %)
- - This rule is also interesting as it talks about the Neighborhood, the geographic location of where people are loacted and sex of people considered. As per this rule, for female folks located in the South Beach - Tottenville location, it is likely that the total number of HIV diagnosis is low, marking this region safer in terms of HIV diagosis for females.
+ 4. ['AIDS PER 100K=High', 'TOTAL NUMBER OF HIV DIAGNOSES=High'] => [ SEX=Male ] (Conf:  70.6371 %, Supp: 10.1715 %)
+ - A rule like this, helps analyze the flip rules slighly better, i.e, In case we have Aids per 100k is high and total number of HIV Diagnosis is high it is likely that the sex affected by the association is male. 
  
- 5. ['RACE/ETHNICITY=White', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] => [ SEX=Female ] (Conf:  79.2553 %, Supp: 5.9434 %) - A rule like this, helps analyze the flip rules slighly better, i.e, In case we have race as white total number of aids diagnosis is low  its likely the sex affected by the association is female. 
+ 5. ['RACE/ETHNICITY=Asian/Pacific Islander', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=Low ] (Conf:  94.8805 %, Supp: 11.089 %) - Another interesting observation is that among Asian/Pacific Islander race if ntotal number of HIV diagnosis is low, total number of AIDS diagnosis is also low.
  
-There were several other interesting associations that were obtained as a result of running the apriori algorithm. In totality, we have generated approximately 168 rules and discovered many such associations. These rules are useful in the sense that one can plan many preventive and curative measures according to the associations. This also shows how infection rates differ with race, neighborhood and sex demographics.
+ If we decrease the support further, for example 10% keeping confidence as 70% we can derive additional insights about neighborhood as well.
+ 
+ 1. ['Neighborhood (U.H.F)=Fresh Meadows'] => [ AIDS PER 100K=Low ] (Conf:  70.0 %, Supp: 1.6753 %) - This gives an insight into the relation between geographic location and AIDS, as per the rule we can identify that the region Fresh Meadows has low AIDS PER 100k population density. This can be helpful in finding areas that are safer.
+
+ 2. ['Neighborhood (U.H.F)=Greenwich Village - SoHo', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] => [ SEX=Female ] (Conf:  70.2703 %, Supp: 1.0371 %) - Such a kind of rule expresses the relation of region, HIV diagnosis and gender. If we have neighborhood, Greenwich Village - SoHo, with low HIV Diagnosis, we can say with 70% confidence the sex of our study is Female.
+
+ 
+There were several other interesting associations that were obtained as a result of running the apriori algorithm. In totality, we have generated 190 rules and discovered many such associations with 10% support and 70% confidence. These rules are useful in the sense that one can plan many preventive and curative measures according to the associations. This also shows how infection rates differ with race, neighborhood and sex demographics.
  
  
  
