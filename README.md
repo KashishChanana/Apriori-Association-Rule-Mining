@@ -13,7 +13,7 @@ The following files have been submitted -
 
 4. main.py - python file responsible for running the program
 
-5. example-run.txt - example run output obtained as a result of running the apriori algorithm with confidence 0.7 and support 0.01
+5. example-run.txt - example run output obtained as a result of running the apriori algorithm with confidence 0.7 and support 0.1
 
 <b>3. Steps to run the code </b>
 
