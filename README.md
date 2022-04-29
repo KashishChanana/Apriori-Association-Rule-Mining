@@ -95,7 +95,7 @@ Example - `python3 main.py INTEGRATED-DATASET.csv 0.1 0.7`
 
  <b> 6. Results derived on `python3 main.py INTEGRATED-DATASET.csv 0.1 0.7`</b>
   
-  * After empirically trying various combinations of support and confidence we decided to go with values 0.01 for support and 0.7 for confidence as they give a reasonable number of association rules that are relevant and interesting. 0.01 support makes sense as discussed in class - high levels of support doesn't garner enough frequent itemsets that might give good quality association rules, therefore realistically speaking using low support allows us to capture more information. Confidence value of 0.7 was also empirically selected by studying the nature & varity of the rules generated.
+  * After empirically trying various combinations of support and confidence we decided to go with values 0.1 for support and 0.7 for confidence as they give a reasonable number of association rules that are relevant and interesting. 0.1 support makes sense as discussed in class - high levels of support doesn't garner enough frequent itemsets that might give good quality association rules, therefore realistically speaking using low support allows us to capture more information. Confidence value of 0.7 was also empirically selected by studying the nature & varity of the rules generated.
  
   * We were able to generate some interesting associations that gave us insight into the associations between different items in the market basket.
   * For example, some rules generated and their implications:
