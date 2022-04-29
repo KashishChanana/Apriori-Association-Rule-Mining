@@ -73,6 +73,8 @@ def prune(L_k, C_k_plus_one):
     for c in C_k_plus_one:
         subsets = findsubsets(set(c), len(c)-1)
         for subset in subsets:
+            if len(subset)>1:
+                subset = tuple(sorted(subset))
             if subset not in L_k:
                 C_invalid.add(c)
                 break
