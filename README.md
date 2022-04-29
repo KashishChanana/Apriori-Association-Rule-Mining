@@ -18,9 +18,11 @@ The following files have been submitted -
 <b>3. Steps to run the code </b>
 
 Use the following command to run the code -
-`python3 main.py INTEGRATED_DATASET.csv <minimum support> <minimum confidence>`
+`cd proj3`
 
-Example - `python3 main.py INTEGRATED_DATASET.csv 0.01 0.7`
+`python3 main.py INTEGRATED-DATASET.csv <minimum support> <minimum confidence>`
+
+Example - `python3 main.py INTEGRATED-DATASET.csv 0.01 0.7`
 
 <b>4. NYC Open Data Set Chosen </b>
 
@@ -91,7 +93,7 @@ Example - `python3 main.py INTEGRATED_DATASET.csv 0.01 0.7`
     * Sorts rules in decreasing order of confidence.
     * Prints support and association rules in required format by writing the output to file.
 
- <b> 6. Results derived on `python3 main.py INTEGRATED_DATASET.csv 0.01 0.7`</b>
+ <b> 6. Results derived on `python3 main.py INTEGRATED-DATASET.csv 0.01 0.7`</b>
   
   * After empirically trying various combinations of support and confidence we decided to go with values 0.01 for support and 0.7 for confidence as they give a reasonable number of association rules that are relevant and interesting. 0.01 support makes sense as discussed in class - high levels of support doesn't garner enough frequent itemsets that might give good quality association rules, therefore realistically speaking using low support allows us to capture more information. Confidence value of 0.7 was also empirically selected by studying the nature & varity of the rules generated.
  
