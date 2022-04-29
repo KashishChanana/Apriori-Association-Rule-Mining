@@ -111,7 +111,7 @@ Example - `python3 main.py INTEGRATED-DATASET.csv 0.1 0.7`
  
  5. ['RACE/ETHNICITY=Asian/Pacific Islander', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=Low ] (Conf:  94.8805 %, Supp: 11.089 %) - Another interesting observation is that among Asian/Pacific Islander race if ntotal number of HIV diagnosis is low, total number of AIDS diagnosis is also low.
  
- If we decrease the support further, for example 10% keeping confidence as 70% we can derive additional insights about neighborhood as well.
+ If we decrease the support further, for example 1% keeping confidence as 70% we can derive additional insights about neighborhood as well.
  
  1. ['Neighborhood (U.H.F)=Fresh Meadows'] => [ AIDS PER 100K=Low ] (Conf:  70.0 %, Supp: 1.6753 %) - This gives an insight into the relation between geographic location and AIDS, as per the rule we can identify that the region Fresh Meadows has low AIDS PER 100k population density. This can be helpful in finding areas that are safer.
 
