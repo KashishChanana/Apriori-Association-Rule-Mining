@@ -4,18 +4,25 @@
 <b>2. List of files submitted </b>
 
 The following files have been submitted -
+
 1. Data Cleaning HW3.ipynb - This file contains the steps we undertook to clean the data.
-2. INTEGRATED_DATASET.csv - Contains the cleaned data obtained after undertaking the data cleaning steps.
+
+2. INTEGRATED-DATASET.csv - Contains the cleaned data obtained after undertaking the data cleaning steps.
+
 3. apriori.py - python file that implements the Apriori Association Rule Mining Algorithm
+
 4. main.py - python file responsible for running the program
-5. output.txt - example run output obtained as a result of running the apriori algorithm
+
+5. example-run.txt - example run output obtained as a result of running the apriori algorithm with confidence 0.7 and support 0.01
 
 <b>3. Steps to run the code </b>
 
 Use the following command to run the code -
-`python3 main.py INTEGRATED_DATASET.csv <minimum support> <minimum confidence>`
+`cd proj3`
 
-Example - `python3 main.py INTEGRATED_DATASET.csv 0.09 0.7`
+`python3 main.py INTEGRATED-DATASET.csv <minimum support> <minimum confidence>`
+
+Example - `python3 main.py INTEGRATED-DATASET.csv 0.01 0.7`
 
 <b>4. NYC Open Data Set Chosen </b>
 
@@ -54,9 +61,13 @@ Example - `python3 main.py INTEGRATED_DATASET.csv 0.09 0.7`
 <b> 5. Implementation of Apriori Algorithm </b>
 
  a. In main.py
+ 
   * Function Read to CSV file and store transactions in transactions list.
+ 
   * Parse DataFile name, minimum support and minimum confidence from command line
+  
   * Call function read and store transactions in a list.
+  
   * Call apriori_algorithm from apriori.py
 
  b. In apriori.py
@@ -65,7 +76,7 @@ Example - `python3 main.py INTEGRATED_DATASET.csv 0.09 0.7`
   * findpermutations(): Finds permutations of length n
   * get_L_1(): Generates the first L1 set of individual items. Returns L1 and L1_support. Only items that pass the minimum support threshold are appended to the list.
   * apriori_gen(): Takes in the previous list generated of size k i.e. Lk and generates subsets for L_k+1. The SQL part mentioned in the paper has been implemented in this function from scratch without using python libraries. Where we use set-intersect for join and items are ordered hence item1=item2...and item4<item5 part of the paper also holds.
-  * prune(): After C_k+1 subsets are generated, the prune function removes the invalid ones. If subset of the set of C_K+1 is not in Lk remove the same (Same logic as per the paper).
+  * prune(): After C_k+1 subsets are generated, the prune function removes the invalid ones. If subset of the set of C_K+1 is not in Lk remove the same (Same logic as per the paper)
   * get_L_k_plus_one(): Repeat till len(L_K)!=0. 
       * The initial input to this function is L1 generated via get_L_1(). If L_1 is empty break the loop and return empty set for C_k_plus_one.
       * Else for all transactions for all candidate sets in C_k_plus_one if candidate set is subset of transaction increase count of candidate by 1.
@@ -82,25 +93,25 @@ Example - `python3 main.py INTEGRATED_DATASET.csv 0.09 0.7`
     * Sorts rules in decreasing order of confidence.
     * Prints support and association rules in required format by writing the output to file.
 
- <b> 6. Results derived on `python3 main.py INTEGRATED_DATASET.csv 0.09 0.7`</b>
+ <b> 6. Results derived on `python3 main.py INTEGRATED-DATASET.csv 0.01 0.7`</b>
   
-  * After empirically trying various combinations of support and confidence we decided to go with values 0.09 for support and 0.7 for confidence as they give a reasonable number of association rules that are relevant and interesting.
+  * After empirically trying various combinations of support and confidence we decided to go with values 0.01 for support and 0.7 for confidence as they give a reasonable number of association rules that are relevant and interesting. 0.01 support makes sense as discussed in class - high levels of support doesn't garner enough frequent itemsets that might give good quality association rules, therefore realistically speaking using low support allows us to capture more information. Confidence value of 0.7 was also empirically selected by studying the nature & varity of the rules generated.
+ 
   * We were able to generate some interesting associations that gave us insight into the associations between different items in the market basket.
-  * For example, some sample rules generated and their implications:
-    * ['RACE/ETHNICITY=Native American'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=Low ], (Conf:  100.0 %, Supp: 12.8041 %) - This indicates an interesting association between race and total number of aids diagnoses which is true in a real scenario as AIDS is also influced by genetics which may be a case where people of some race are more prone to it than other.
-    * ['RACE/ETHNICITY=Multiracial', 'TOTAL NUMBER OF HIV DIAGNOSES=Low'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=Low ], (Conf:  100.0 %, Supp: 13.2429 %) - When race is Multiracial and TOTAL NUMBER OF HIV DIAGNOSES is low TOTAL NUMBER OF AIDS DIAGNOSES is also low which gives a surprising association of how multiracial race with low  total number of HIV diagnosis has low total number of aids diagnosis.
-    * ['AIDS PER 100K=High', 'SEX=Male', 'TOTAL NUMBER OF AIDS DIAGNOSES=High'] => [ TOTAL NUMBER OF HIV DIAGNOSES=High ], (Conf:  91.3858 %, Supp: 9.7327 %) - Another useful insight derived was that when AIDs per 100K is high, sex is male and total number of aids diagnosis is high then total number of HIV diagnosis is also high.
- * We have generated approximately 216 rules and discovered many such associations. These rules are useful in the sense that one can plan many preventive and curative measures according to the associations.
- * This also shows how infection rates differ with race and sex demographics.
+  * For example, some rules generated and their implications:
+
+ 1. ['RACE/ETHNICITY=Native American'] => [ TOTAL NUMBER OF AIDS DIAGNOSES=Low ], (Conf:  100.0 %, Supp: 12.8041 %) - This indicates an interesting association between race and total number of aids diagnoses.  Such a rule helps studying the demographics of AIDS based on Race. People of Native American race have low total number of HIV diagnosis.
+ 2. ['RACE/ETHNICITY=Multiracial'] => [ AIDS PER 100K=Low ] (Conf:  96.1194 %, Supp: 12.844 %) - This rule also sheds light on race and AIDS diagnosis. As we can see people of multiracial race tend to have lower AIDS diagnosis per 100K population. 
+
+ 3. ['RACE/ETHNICITY=Black', 'SEX=Male'] => [ HIV PER 100K=High ] (Conf:  88.6905 %, Supp: 5.9434 %) - In continuation of the previous rule, if we have a population of Black Males, it's likely that HIV cases PER 100K population is High. This again sheds light on how the disease is spread across different communities based on Race and Gender. Such a rule can be helpful in analyzing patterns and taking preventative measures in the communities that are high risk.
+ 
+ 4. ['Neighborhood (U.H.F)=South Beach - Tottenville', 'SEX=Female'] => [ TOTAL NUMBER OF HIV DIAGNOSES=Low ] (Conf:  100.0 %, Supp: 1.1169 %)
+ - This rule is also interesting as it talks about the Neighborhood, the geographic location of where people are loacted and sex of people considered. As per this rule, for female folks located in the South Beach - Tottenville location, it is likely that the total number of HIV diagnosis is low, marking this region safer in terms of HIV diagosis for females.
+ 
+ 5. ['RACE/ETHNICITY=White', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] => [ SEX=Female ] (Conf:  79.2553 %, Supp: 5.9434 %) - A rule like this, helps analyze the flip rules slighly better, i.e, In case we have race as white total number of aids diagnosis is low  its likely the sex affected by the association is female. 
+ 
+There were several other interesting associations that were obtained as a result of running the apriori algorithm. In totality, we have generated approximately 168 rules and discovered many such associations. These rules are useful in the sense that one can plan many preventive and curative measures according to the associations. This also shows how infection rates differ with race, neighborhood and sex demographics.
  
  
  
   
-
-
-
-  
-      
- 
-   
-   
