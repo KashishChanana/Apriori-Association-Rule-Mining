@@ -105,11 +105,12 @@ Example - `python3 main.py INTEGRATED-DATASET.csv 0.01 0.7`
 
  3. ['RACE/ETHNICITY=Black', 'SEX=Male'] => [ HIV PER 100K=High ] (Conf:  88.6905 %, Supp: 5.9434 %) - In continuation of the previous rule, if we have a population of Black Males, it's likely that HIV cases PER 100K population is High. This again sheds light on how the disease is spread across different communities based on Race and Gender. Such a rule can be helpful in analyzing patterns and taking preventative measures in the communities that are high risk.
  
- 4. ['Neighborhood (U.H.F)=South Beach - Tottenville', 'SEX=Female'] => [ HIV PER 100K=Low ] (Conf:  92.8571 %, Supp: 1.0371 %) - This rule is also interesting as it talks about the Neighborhood, the geographic location of where people are loacted. As per this rule, for female folks located in the South Beach - Tottenville location, it is likely that the HIV diagnosis per 100K population is low, marking this region safer in terms of HIV diagosis for females.
+ 4. ['Neighborhood (U.H.F)=South Beach - Tottenville', 'SEX=Female'] => [ TOTAL NUMBER OF HIV DIAGNOSES=Low ] (Conf:  100.0 %, Supp: 1.1169 %)
+ - This rule is also interesting as it talks about the Neighborhood, the geographic location of where people are loacted and sex of people considered. As per this rule, for female folks located in the South Beach - Tottenville location, it is likely that the total number of HIV diagnosis is low, marking this region safer in terms of HIV diagosis for females.
  
- 5. ['HIV PER 100K=Medium', 'RACE/ETHNICITY=White'] => [ SEX=Male ] (Conf:  86.4865 %, Supp: 2.5529 %) - A rule like this, helps analyze the flip rules slighly better, i.e, In case we have Medium levels of HIV per 100K population diagnosis and the race is Whilte, its likely the sex affected is Male. 
+ 5. ['RACE/ETHNICITY=White', 'TOTAL NUMBER OF AIDS DIAGNOSES=Low'] => [ SEX=Female ] (Conf:  79.2553 %, Supp: 5.9434 %) - A rule like this, helps analyze the flip rules slighly better, i.e, In case we have race as white total number of aids diagnosis is low  its likely the sex affected by the association is female. 
  
-There were several other interesting associations that were obtained as a result of running the apriori algorithm. In totality, we have generated approximately 124 rules and discovered many such associations. These rules are useful in the sense that one can plan many preventive and curative measures according to the associations. This also shows how infection rates differ with race, neighborhood and sex demographics.
+There were several other interesting associations that were obtained as a result of running the apriori algorithm. In totality, we have generated approximately 168 rules and discovered many such associations. These rules are useful in the sense that one can plan many preventive and curative measures according to the associations. This also shows how infection rates differ with race, neighborhood and sex demographics.
  
  
  
