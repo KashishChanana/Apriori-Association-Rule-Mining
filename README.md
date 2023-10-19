@@ -1,5 +1,5 @@
 # Apriori-Association-Rule-Mining
-<b>1. Name & UNI: Ashwathy Mohan Menon(am5683), Kashish Chanana (kc3419) </b>
+<b>1. Name & UNI: Ashwathy Mohan Menon, Kashish Chanana </b>
 
 <b>2. List of files submitted </b>
 
